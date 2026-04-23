@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "framework": "nextjs",
+  "regions": ["all"],
+  "headers": [
+    {
+      "source": "/api/download",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/download/:id",
+      "destination": "/api/download?id=:id"
+    }
+  ]
+}
