@@ -49,9 +49,11 @@ export default async function ToolPage({ params }: ToolPageProps) {
       <header className="border-b border-gray-800 bg-gray-900/80 backdrop-blur-md sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-xl font-bold text-white">
-              A
-            </div>
+            <img
+              src="/apple-touch-icon.png"
+              alt="AppGater"
+              className="w-10 h-10 rounded-xl"
+            />
             <div>
               <h1 className="text-xl font-bold tracking-tight text-white">AppGater</h1>
               <p className="text-xs text-gray-400">官方工具安全下载站</p>
