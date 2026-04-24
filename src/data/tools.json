@@ -8,9 +8,10 @@
     "size": "~80MB",
     "status": "online",
     "icon": "💻",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:51:13.214Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 200,
+    "responseTime": 162
   },
   {
     "id": "docker",
@@ -21,9 +22,10 @@
     "size": "~500MB",
     "status": "online",
     "icon": "🐳",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:51:13.247Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 301,
+    "responseTime": 33
   },
   {
     "id": "nodejs",
@@ -34,9 +36,10 @@
     "size": "~30MB",
     "status": "online",
     "icon": "🟢",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:51:13.312Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 307,
+    "responseTime": 64
   },
   {
     "id": "python",
@@ -47,9 +50,10 @@
     "size": "~25MB",
     "status": "online",
     "icon": "🐍",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:51:13.332Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 200,
+    "responseTime": 19
   },
   {
     "id": "git",
@@ -60,9 +64,10 @@
     "size": "~50MB",
     "status": "online",
     "icon": "🔀",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:51:13.380Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 301,
+    "responseTime": 48
   },
   {
     "id": "go",
@@ -71,11 +76,12 @@
     "desc": "Google 编程语言",
     "official": "https://go.dev/dl/",
     "size": "~100MB",
-    "status": "online",
+    "status": "offline",
     "icon": "🐹",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
-    "healthStatus": "online",
-    "httpStatus": 200
+    "lastChecked": "2026-04-24T04:51:13.539Z",
+    "healthStatus": "offline",
+    "httpStatus": 405,
+    "responseTime": 159
   },
   {
     "id": "java",
@@ -86,9 +92,10 @@
     "size": "~150MB",
     "status": "online",
     "icon": "☕",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:51:13.638Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 200,
+    "responseTime": 98
   },
   {
     "id": "pycharm",
@@ -99,9 +106,10 @@
     "size": "~400MB",
     "status": "online",
     "icon": "🎯",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:51:13.707Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 200,
+    "responseTime": 69
   },
   {
     "id": "office",
@@ -112,9 +120,10 @@
     "size": "~1GB",
     "status": "online",
     "icon": "📎",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:51:13.779Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 302,
+    "responseTime": 72
   },
   {
     "id": "typora",
@@ -125,9 +134,10 @@
     "size": "~50MB",
     "status": "online",
     "icon": "📝",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:51:13.831Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 200,
+    "responseTime": 52
   },
   {
     "id": "sublime",
@@ -138,9 +148,10 @@
     "size": "~20MB",
     "status": "online",
     "icon": "✨",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:51:14.306Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 200,
+    "responseTime": 475
   },
   {
     "id": "pdf",
@@ -149,11 +160,12 @@
     "desc": "官方 PDF 处理工具",
     "official": "https://www.adobe.com/acrobat.html",
     "size": "~200MB",
-    "status": "online",
+    "status": "offline",
     "icon": "📄",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
-    "healthStatus": "online",
-    "httpStatus": 200
+    "lastChecked": "2026-04-24T04:52:01.695Z",
+    "healthStatus": "offline",
+    "httpStatus": 0,
+    "responseTime": 15000
   },
   {
     "id": "wifi",
@@ -164,9 +176,10 @@
     "size": "~15MB",
     "status": "online",
     "icon": "📡",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:52:01.741Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 301,
+    "responseTime": 46
   },
   {
     "id": "ftp",
@@ -177,9 +190,10 @@
     "size": "~10MB",
     "status": "online",
     "icon": "📂",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:52:02.276Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 200,
+    "responseTime": 535
   },
   {
     "id": "wget",
@@ -190,9 +204,10 @@
     "size": "~5MB",
     "status": "online",
     "icon": "⬇️",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:52:03.004Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 200,
+    "responseTime": 728
   },
   {
     "id": "packet",
@@ -203,9 +218,10 @@
     "size": "~70MB",
     "status": "online",
     "icon": "📊",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:52:03.060Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 200,
+    "responseTime": 56
   },
   {
     "id": "disk",
@@ -216,9 +232,10 @@
     "size": "~5MB",
     "status": "online",
     "icon": "💿",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:52:03.586Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 301,
+    "responseTime": 526
   },
   {
     "id": "port",
@@ -229,9 +246,10 @@
     "size": "~1MB",
     "status": "online",
     "icon": "🔌",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:52:03.630Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 301,
+    "responseTime": 44
   },
   {
     "id": "ocr",
@@ -242,9 +260,10 @@
     "size": "~20MB",
     "status": "online",
     "icon": "🔍",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:52:04.075Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 200,
+    "responseTime": 445
   },
   {
     "id": "qgis",
@@ -255,9 +274,10 @@
     "size": "~400MB",
     "status": "online",
     "icon": "🗺️",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:52:04.621Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 200,
+    "responseTime": 546
   },
   {
     "id": "screen",
@@ -268,9 +288,10 @@
     "size": "~100MB",
     "status": "online",
     "icon": "🎥",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:52:05.148Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 200,
+    "responseTime": 527
   },
   {
     "id": "video",
@@ -281,9 +302,10 @@
     "size": "~40MB",
     "status": "online",
     "icon": "🎬",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:52:05.757Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 200,
+    "responseTime": 609
   },
   {
     "id": "gif",
@@ -294,9 +316,10 @@
     "size": "~3MB",
     "status": "online",
     "icon": "🎞️",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:52:05.884Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 200,
+    "responseTime": 127
   },
   {
     "id": "color",
@@ -307,8 +330,9 @@
     "size": "~2MB",
     "status": "online",
     "icon": "🎨",
-    "lastChecked": "2024-01-01T00:00:00.000Z",
+    "lastChecked": "2026-04-24T04:52:06.570Z",
     "healthStatus": "online",
-    "httpStatus": 200
+    "httpStatus": 200,
+    "responseTime": 686
   }
 ]
