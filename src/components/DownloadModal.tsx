@@ -1,8 +1,9 @@
 'use client';
 
-import { useState } from 'react';
-import { Tool } from '@/lib/types';
+import { X, Download } from 'lucide-react';
+import { Tool, PRICE_LABELS, PLATFORM_LABELS, ARCH_LABELS } from '@/lib/types';
 import { isSafeOfficialUrl } from '@/lib/download';
+import { getLogoPath } from '@/lib/tools';
 
 interface DownloadModalProps {
   tool: Tool | null;
@@ -11,113 +12,116 @@ interface DownloadModalProps {
   baseUrl: string;
 }
 
-export default function DownloadModal({ tool, isOpen, onClose, baseUrl }: DownloadModalProps) {
-  const [copied, setCopied] = useState(false);
-
+export default function DownloadModal({
+  tool,
+  isOpen,
+  onClose,
+  baseUrl,
+}: DownloadModalProps) {
   if (!isOpen || !tool) return null;
 
-  const handleStartDownload = () => {
-    const downloadUrl = `${baseUrl}/api/download?id=${tool.id}`;
-    window.open(downloadUrl, '_blank');
+  const logo = getLogoPath(tool);
+  const isSafe = isSafeOfficialUrl(tool.official);
+
+  const handleDownload = () => {
+    window.open(`${baseUrl}/api/download?id=${tool.id}`, '_blank');
     onClose();
   };
 
-  const handleCopyOfficialLink = async () => {
-    try {
-      await navigator.clipboard.writeText(tool.official);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      // 复制失败
-    }
-  };
-
-  const isSafe = isSafeOfficialUrl(tool.official);
-
   return (
     <div
-      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+      className="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center p-4"
       onClick={(e) => e.target === e.currentTarget && onClose()}
     >
-      <div className="bg-gray-800 rounded-2xl max-w-lg w-full p-6 border border-gray-700">
-        <div className="flex items-start justify-between mb-4">
-          <div>
-            <h3 className="text-xl font-bold text-white">{tool.name}</h3>
-            <p className="text-sm text-gray-400 mt-1">
-              {isSafe ? '官方来源验证通过' : '请仔细确认来源安全性'}
-            </p>
+      <div className="w-full max-w-sm rounded-xl border border-[var(--glass-border)] bg-surface-elevated p-5 animate-fade-in">
+        {/* Header */}
+        <div className="flex items-start justify-between mb-5">
+          <div className="flex items-center gap-3">
+            <img
+              src={logo}
+              alt={tool.name}
+              className="w-10 h-10 rounded-lg bg-[var(--glass-bg)] object-contain"
+            />
+            <div>
+              <h3 className="font-medium text-[15px] text-ink">{tool.name}</h3>
+              <p className="text-[12px] text-ink-faint">{tool.publisher}</p>
+            </div>
           </div>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-white transition-colors"
+            className="p-1 rounded-md hover:bg-[var(--glass-hover-bg)] text-ink-faint hover:text-ink transition-colors"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
+            <X className="w-4 h-4" />
           </button>
         </div>
 
-        <div className="space-y-3 mb-6">
-          <div className="flex items-center gap-3 p-3 bg-gray-900/50 rounded-lg">
-            <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${isSafe ? 'bg-blue-600/20 text-blue-400' : 'bg-yellow-600/20 text-yellow-400'}`}>
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div className="flex-1">
-              <p className="font-medium text-sm text-white">安全验证</p>
-              <p className="text-xs text-gray-500">
-                {isSafe ? '链接指向官方域名，无篡改' : '请自行验证链接安全性'}
-              </p>
-            </div>
+        {/* Tags */}
+        {tool.tags && tool.tags.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 mb-4">
+            {tool.tags.map((tag) => (
+              <span
+                key={tag}
+                className="text-[11px] px-2 py-1 rounded-md bg-[var(--glass-bg)] border border-[var(--glass-border)] text-ink-muted"
+              >
+                {tag}
+              </span>
+            ))}
           </div>
+        )}
 
-          <div className="flex items-center gap-3 p-3 bg-gray-900/50 rounded-lg">
-            <div className="w-10 h-10 bg-green-600/20 rounded-lg flex items-center justify-center text-green-400">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-            </div>
-            <div className="flex-1">
-              <p className="font-medium text-sm text-white">高速下载</p>
-              <p className="text-xs text-gray-500">Edge 网络加速 + 智能分流</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-3 p-3 bg-gray-900/50 rounded-lg">
-            <div className="w-10 h-10 bg-purple-600/20 rounded-lg flex items-center justify-center text-purple-400">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-              </svg>
-            </div>
-            <div className="flex-1">
-              <p className="font-medium text-sm text-white">文件大小</p>
-              <p className="text-xs text-gray-500">{tool.size}</p>
-            </div>
+        {/* Platforms */}
+        <div className="mb-4">
+          <p className="text-[11px] text-ink-faint mb-1.5">支持平台</p>
+          <div className="flex flex-wrap gap-1.5">
+            {tool.platforms.map((p) => (
+              <span key={p} className="text-[12px] px-2 py-1 rounded-md bg-[var(--glass-bg)] border border-[var(--glass-border)] text-ink-muted">
+                {PLATFORM_LABELS[p] || p}
+              </span>
+            ))}
           </div>
         </div>
 
-        <div className="flex gap-3">
-          <button
-            onClick={handleStartDownload}
-            className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-medium transition-all flex items-center justify-center gap-2"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-            立即下载
-          </button>
-          <button
-            onClick={handleCopyOfficialLink}
-            className="px-4 py-3 bg-gray-700 hover:bg-gray-600 rounded-xl text-sm font-medium transition-all text-white"
-          >
-            {copied ? '已复制' : '复制官方链接'}
-          </button>
+        {/* Architectures */}
+        <div className="mb-4">
+          <p className="text-[11px] text-ink-faint mb-1.5">CPU 架构</p>
+          <div className="flex flex-wrap gap-1.5">
+            {tool.architectures.map((a) => (
+              <span key={a} className="text-[12px] px-2 py-1 rounded-md bg-[var(--glass-bg)] border border-[var(--glass-border)] text-ink-muted">
+                {ARCH_LABELS[a] || a}
+              </span>
+            ))}
+          </div>
         </div>
 
-        <p className="text-xs text-gray-600 mt-4 text-center">
-          下载由 AppGater 代理加速，文件来源：官方服务器
-        </p>
+        {/* Stats */}
+        <div className="space-y-2.5 mb-6">
+          {[
+            { label: '授权方式', value: PRICE_LABELS[tool.price] },
+            { label: '文件大小', value: tool.size },
+            { label: '来源验证', value: (
+              <span className={isSafe ? 'text-emerald-500' : 'text-amber-500'}>
+                {isSafe ? '官方已验证' : '请自行确认'}
+              </span>
+            )},
+          ].map((item) => (
+            <div
+              key={item.label}
+              className="flex items-center justify-between py-1.5 border-b border-[var(--divider)] last:border-0"
+            >
+              <span className="text-[13px] text-ink-faint">{item.label}</span>
+              <span className="text-[13px] text-ink">{item.value}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* Actions */}
+        <button
+          onClick={handleDownload}
+          className="w-full flex items-center justify-center gap-1.5 py-2.5 bg-ink text-surface rounded-lg text-[13px] font-medium hover:bg-ink-muted transition-colors"
+        >
+          <Download className="w-4 h-4" />
+          立即下载
+        </button>
       </div>
     </div>
   );

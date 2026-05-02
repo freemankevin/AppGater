@@ -8,17 +8,21 @@ interface CategoryFilterProps {
   onCategoryChange: (category: ToolCategory) => void;
 }
 
-export default function CategoryFilter({ categories, activeCategory, onCategoryChange }: CategoryFilterProps) {
+export default function CategoryFilter({
+  categories,
+  activeCategory,
+  onCategoryChange,
+}: CategoryFilterProps) {
   return (
-    <div className="flex flex-wrap justify-center gap-2 mt-6">
+    <div className="flex flex-wrap gap-2">
       {categories.map((cat) => (
         <button
           key={cat.id}
           onClick={() => onCategoryChange(cat.id)}
-          className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+          className={`px-3.5 py-1.5 rounded-lg text-[13px] font-medium transition-colors ${
             activeCategory === cat.id
-              ? 'bg-blue-600 text-white'
-              : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
+              ? 'bg-[var(--glass-active-bg)] text-ink border border-[var(--glass-active-border)]'
+              : 'text-ink-faint hover:text-ink-muted border border-transparent'
           }`}
         >
           {cat.name}

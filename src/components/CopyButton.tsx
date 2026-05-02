@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Copy, Check } from 'lucide-react';
 
 interface CopyButtonProps {
   text: string;
@@ -16,25 +17,17 @@ export default function CopyButton({ text, title = '复制' }: CopyButtonProps) 
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {
-      // 复制失败
+      // ignore
     }
   };
 
   return (
     <button
       onClick={handleCopy}
-      className="p-3 bg-gray-700 hover:bg-gray-600 rounded-lg text-white transition-colors"
+      className="p-2 rounded-lg bg-[var(--glass-bg)] border border-[var(--glass-border)] text-ink-muted hover:text-ink hover:bg-[var(--glass-hover-bg)] hover:border-[var(--glass-hover-border)] transition-colors"
       title={copied ? '已复制' : title}
     >
-      {copied ? (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-        </svg>
-      ) : (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-        </svg>
-      )}
+      {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
     </button>
   );
 }

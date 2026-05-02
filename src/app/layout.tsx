@@ -1,21 +1,19 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from 'next';
+import ThemeProvider from '@/components/ThemeProvider';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "AppGater",
-  description: "聚合全球优质开发/办公工具，每日自动检测官方链接可用性，提供安全高速的下载代理服务",
-  keywords: ["工具下载", "开发工具", "官方软件", "安全下载", "软件聚合"],
+  title: 'AppGater',
+  description: '发现、评分和下载全球优质官方软件，安全、简洁、无广告',
+  keywords: ['软件市场', '官方下载', '开发工具', '办公软件', '安全下载'],
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: '/favicon.ico' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
     apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
   },
 };
@@ -26,9 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN">
-      <body className={`${inter.className} bg-gray-900 text-white min-h-screen`}>
-        {children}
+    <html lang="zh-CN" suppressHydrationWarning>
+      <body className="font-sans min-h-screen antialiased">
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,22 +1,20 @@
 import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-gray-900 flex items-center justify-center px-4">
+    <main className="min-h-screen bg-surface flex items-center justify-center px-4">
       <div className="text-center">
-        <div className="text-8xl mb-4">🔍</div>
-        <h1 className="text-4xl font-bold text-white mb-4">页面未找到</h1>
-        <p className="text-gray-400 mb-8">抱歉，你访问的页面不存在或已被移除</p>
+        <h1 className="font-display text-6xl font-bold tracking-tight mb-4">404</h1>
+        <p className="text-ink-muted text-lg mb-8">页面不存在</p>
         <Link
           href="/"
-          className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-medium transition-colors"
+          className="inline-flex items-center gap-2 px-5 py-2.5 bg-[var(--glass-bg)] border border-[var(--glass-border)] rounded-lg text-[13px] text-ink-muted hover:text-ink hover:border-[var(--glass-hover-border)] transition-colors"
         >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-          </svg>
+          <ArrowLeft className="w-4 h-4" />
           返回首页
         </Link>
       </div>
-    </div>
+    </main>
   );
 }

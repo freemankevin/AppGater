@@ -1,7 +1,8 @@
 'use client';
 
-import { Tool } from '@/lib/types';
+import { Tool, PRICE_LABELS, PLATFORM_LABELS, ARCH_LABELS } from '@/lib/types';
 import { getStatusStyles } from '@/lib/download';
+import { getLogoPath } from '@/lib/tools';
 
 interface ToolCardProps {
   tool: Tool;
@@ -10,33 +11,72 @@ interface ToolCardProps {
 
 export default function ToolCard({ tool, onClick }: ToolCardProps) {
   const styles = getStatusStyles(tool.status);
+  const logo = getLogoPath(tool);
+  const isOffline = tool.status === 'offline';
 
   return (
     <div
       onClick={onClick}
-      className="bg-gray-800 border border-gray-700 rounded-xl p-5 cursor-pointer group hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10"
+      className={`group relative flex flex-col rounded-xl border border-[var(--glass-border)] bg-[var(--glass-bg)] cursor-pointer transition-all duration-200 hover:bg-[var(--glass-hover-bg)] hover:border-[var(--glass-hover-border)] ${
+        isOffline ? 'opacity-50' : ''
+      }`}
     >
-      <div className="flex items-start justify-between mb-3">
-        <div className="text-3xl">{tool.icon}</div>
-        <div className="flex items-center gap-1.5">
-          <span className={`w-2 h-2 rounded-full ${styles.dot} ${tool.status === 'online' ? 'animate-pulse' : ''}`}></span>
-          <span className="text-xs text-gray-500">{styles.text}</span>
+      {/* Header */}
+      <div className="flex items-start gap-3.5 p-4 pb-0">
+        <img
+          src={logo}
+          alt={tool.name}
+          className="w-11 h-11 rounded-lg shrink-0 object-contain bg-[var(--glass-bg)]"
+        />
+        <div className="flex-1 min-w-0 pt-0.5">
+          <div className="flex items-center gap-1.5">
+            <h3 className="font-medium text-[15px] text-ink truncate leading-tight">
+              {tool.name}
+            </h3>
+            <span
+              className={`w-1.5 h-1.5 rounded-full shrink-0 ${styles.dot}`}
+              title={styles.text}
+            />
+          </div>
         </div>
       </div>
 
-      <h4 className="font-bold text-lg mb-1 text-white group-hover:text-blue-400 transition-colors">
-        {tool.name}
-      </h4>
-      <p className="text-sm text-gray-400 mb-3 line-clamp-2">{tool.desc}</p>
+      {/* Description */}
+      <p className="text-[13px] text-ink-muted leading-relaxed px-4 pt-3 pb-4 line-clamp-2">
+        {tool.desc}
+      </p>
 
-      <div className="flex items-center justify-between text-xs text-gray-500 pt-3 border-t border-gray-700">
-        <span>{tool.size}</span>
-        <span className="flex items-center gap-1 text-blue-400 group-hover:translate-x-1 transition-transform">
-          下载
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </span>
+      {/* Footer */}
+      <div className="flex items-center justify-between mt-auto px-4 py-3 border-t border-[var(--divider)]">
+        <div className="flex items-center gap-1.5">
+          {tool.platforms.map((p) => (
+            <span
+              key={p}
+              className="text-[11px] px-1.5 py-0.5 rounded bg-[var(--glass-bg)] text-ink-faint border border-[var(--glass-border)]"
+            >
+              {PLATFORM_LABELS[p] || p}
+            </span>
+          ))}
+        </div>
+        <div className="flex items-center gap-2">
+          {tool.architectures.map((a) => (
+            <span key={a} className="text-[11px] text-ink-faint">
+              {ARCH_LABELS[a] || a}
+            </span>
+          ))}
+          <span className="text-[11px] text-ink-faint">·</span>
+          <span
+            className={`text-[11px] font-medium ${
+              tool.price === 'free'
+                ? 'text-emerald-500'
+                : tool.price === 'paid'
+                ? 'text-amber-500'
+                : 'text-sky-500'
+            }`}
+          >
+            {PRICE_LABELS[tool.price]}
+          </span>
+        </div>
       </div>
     </div>
   );

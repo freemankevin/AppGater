@@ -1,5 +1,6 @@
 'use client';
 
+import { Search } from 'lucide-react';
 import { useState } from 'react';
 
 interface SearchBoxProps {
@@ -7,7 +8,10 @@ interface SearchBoxProps {
   placeholder?: string;
 }
 
-export default function SearchBox({ onSearch, placeholder = '搜索工具名称...' }: SearchBoxProps) {
+export default function SearchBox({
+  onSearch,
+  placeholder = '搜索软件...',
+}: SearchBoxProps) {
   const [query, setQuery] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -17,19 +21,15 @@ export default function SearchBox({ onSearch, placeholder = '搜索工具名称.
   };
 
   return (
-    <div className="relative max-w-2xl mx-auto">
+    <div className="relative w-full">
+      <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-ink-faint" />
       <input
         type="text"
         value={query}
         onChange={handleChange}
         placeholder={placeholder}
-        className="w-full px-6 py-4 bg-gray-800 border border-gray-700 rounded-2xl text-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+        className="w-full pl-10 pr-4 py-2.5 bg-[var(--glass-bg)] border border-[var(--glass-border)] rounded-lg text-[14px] text-ink placeholder-ink-faint focus:outline-none focus:border-[var(--glass-hover-border)] transition-colors"
       />
-      <div className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500">
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg>
-      </div>
     </div>
   );
 }

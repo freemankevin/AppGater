@@ -7,9 +7,17 @@ export interface Tool {
   size: string;
   status: 'online' | 'slow' | 'offline';
   icon: string;
+  logo?: string;
   lastChecked?: string;
   healthStatus?: 'online' | 'offline';
   httpStatus?: number;
+  responseTime?: number;
+  price: 'free' | 'paid' | 'freemium';
+  publisher: string;
+  verified: boolean;
+  tags?: string[];
+  platforms: string[];
+  architectures: string[];
 }
 
 export type ToolCategory = 'all' | 'dev' | 'office' | 'system' | 'network' | 'media';
@@ -28,3 +36,20 @@ export const CATEGORIES: CategoryInfo[] = [
   { id: 'network', name: '网络工具', nameEn: 'Network' },
   { id: 'media', name: '媒体处理', nameEn: 'Media' },
 ];
+
+export const PRICE_LABELS: Record<string, string> = {
+  free: '免费',
+  paid: '付费',
+  freemium: '部分免费',
+};
+
+export const PLATFORM_LABELS: Record<string, string> = {
+  mac: 'macOS',
+  linux: 'Linux',
+  windows: 'Windows',
+};
+
+export const ARCH_LABELS: Record<string, string> = {
+  x86: 'x86',
+  arm64: 'ARM64',
+};

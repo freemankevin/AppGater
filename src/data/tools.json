@@ -8,10 +8,28 @@
     "size": "~80MB",
     "status": "online",
     "icon": "💻",
-    "lastChecked": "2026-05-02T04:55:12.998Z",
+    "lastChecked": "2026-04-30T05:25:39.392Z",
     "healthStatus": "online",
     "httpStatus": 200,
-    "responseTime": 147
+    "responseTime": 97,
+    "price": "free",
+    "publisher": "Microsoft",
+    "verified": true,
+    "tags": [
+      "编辑器",
+      "IDE",
+      "微软"
+    ],
+    "logo": "/logo/vscode.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "docker",
@@ -22,10 +40,28 @@
     "size": "~500MB",
     "status": "online",
     "icon": "🐳",
-    "lastChecked": "2026-05-02T04:55:13.120Z",
+    "lastChecked": "2026-04-30T05:25:39.489Z",
     "healthStatus": "online",
     "httpStatus": 301,
-    "responseTime": 122
+    "responseTime": 97,
+    "price": "freemium",
+    "publisher": "Docker Inc.",
+    "verified": true,
+    "tags": [
+      "容器",
+      "虚拟化",
+      "DevOps"
+    ],
+    "logo": "/logo/docker.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "nodejs",
@@ -36,10 +72,28 @@
     "size": "~30MB",
     "status": "online",
     "icon": "🟢",
-    "lastChecked": "2026-05-02T04:55:13.219Z",
+    "lastChecked": "2026-04-30T05:25:39.560Z",
     "healthStatus": "online",
     "httpStatus": 307,
-    "responseTime": 98
+    "responseTime": 70,
+    "price": "free",
+    "publisher": "OpenJS Foundation",
+    "verified": true,
+    "tags": [
+      "运行时",
+      "JavaScript",
+      "后端"
+    ],
+    "logo": "/logo/nodejs.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "python",
@@ -50,10 +104,28 @@
     "size": "~25MB",
     "status": "online",
     "icon": "🐍",
-    "lastChecked": "2026-05-02T04:55:13.257Z",
+    "lastChecked": "2026-04-30T05:25:39.603Z",
     "healthStatus": "online",
     "httpStatus": 200,
-    "responseTime": 38
+    "responseTime": 42,
+    "price": "free",
+    "publisher": "Python Software Foundation",
+    "verified": true,
+    "tags": [
+      "编程语言",
+      "脚本",
+      "AI"
+    ],
+    "logo": "/logo/python.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "git",
@@ -64,10 +136,28 @@
     "size": "~50MB",
     "status": "online",
     "icon": "🔀",
-    "lastChecked": "2026-05-02T04:55:13.393Z",
+    "lastChecked": "2026-04-30T05:25:39.711Z",
     "healthStatus": "online",
     "httpStatus": 301,
-    "responseTime": 135
+    "responseTime": 108,
+    "price": "free",
+    "publisher": "Software Freedom Conservancy",
+    "verified": true,
+    "tags": [
+      "版本控制",
+      "命令行",
+      "协作"
+    ],
+    "logo": "/logo/git.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "go",
@@ -78,10 +168,28 @@
     "size": "~100MB",
     "status": "offline",
     "icon": "🐹",
-    "lastChecked": "2026-05-02T04:55:13.548Z",
+    "lastChecked": "2026-04-30T05:25:39.793Z",
     "healthStatus": "offline",
     "httpStatus": 405,
-    "responseTime": 155
+    "responseTime": 82,
+    "price": "free",
+    "publisher": "Google",
+    "verified": true,
+    "tags": [
+      "编程语言",
+      "后端",
+      "云原生"
+    ],
+    "logo": "/logo/go.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "java",
@@ -92,10 +200,28 @@
     "size": "~150MB",
     "status": "online",
     "icon": "☕",
-    "lastChecked": "2026-05-02T04:55:13.794Z",
+    "lastChecked": "2026-04-30T05:25:39.843Z",
     "healthStatus": "online",
     "httpStatus": 200,
-    "responseTime": 245
+    "responseTime": 49,
+    "price": "free",
+    "publisher": "Oracle / OpenJDK",
+    "verified": true,
+    "tags": [
+      "编程语言",
+      "企业级",
+      "JVM"
+    ],
+    "logo": "/logo/java.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "pycharm",
@@ -106,10 +232,28 @@
     "size": "~400MB",
     "status": "online",
     "icon": "🎯",
-    "lastChecked": "2026-05-02T04:55:13.930Z",
+    "lastChecked": "2026-04-30T05:25:39.881Z",
     "healthStatus": "online",
     "httpStatus": 200,
-    "responseTime": 136
+    "responseTime": 38,
+    "price": "freemium",
+    "publisher": "JetBrains",
+    "verified": true,
+    "tags": [
+      "IDE",
+      "Python",
+      "开发工具"
+    ],
+    "logo": "/logo/pycharm.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "office",
@@ -120,10 +264,27 @@
     "size": "~1GB",
     "status": "online",
     "icon": "📎",
-    "lastChecked": "2026-05-02T04:55:14.020Z",
+    "lastChecked": "2026-04-30T05:25:39.908Z",
     "healthStatus": "online",
     "httpStatus": 302,
-    "responseTime": 90
+    "responseTime": 27,
+    "price": "paid",
+    "publisher": "Microsoft",
+    "verified": true,
+    "tags": [
+      "办公套件",
+      "文档",
+      "生产力"
+    ],
+    "logo": "/logo/office.svg",
+    "platforms": [
+      "mac",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "typora",
@@ -134,10 +295,28 @@
     "size": "~50MB",
     "status": "online",
     "icon": "📝",
-    "lastChecked": "2026-05-02T04:55:14.110Z",
+    "lastChecked": "2026-04-30T05:25:40.033Z",
     "healthStatus": "online",
     "httpStatus": 200,
-    "responseTime": 90
+    "responseTime": 125,
+    "price": "paid",
+    "publisher": "Typora",
+    "verified": true,
+    "tags": [
+      "Markdown",
+      "写作",
+      "编辑器"
+    ],
+    "logo": "/logo/typora.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "sublime",
@@ -148,10 +327,28 @@
     "size": "~20MB",
     "status": "online",
     "icon": "✨",
-    "lastChecked": "2026-05-02T04:55:14.466Z",
+    "lastChecked": "2026-04-30T05:25:40.233Z",
     "healthStatus": "online",
     "httpStatus": 200,
-    "responseTime": 355
+    "responseTime": 200,
+    "price": "paid",
+    "publisher": "Sublime HQ",
+    "verified": true,
+    "tags": [
+      "编辑器",
+      "轻量",
+      "代码"
+    ],
+    "logo": "/logo/sublime.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "pdf",
@@ -162,10 +359,27 @@
     "size": "~200MB",
     "status": "offline",
     "icon": "📄",
-    "lastChecked": "2026-05-02T04:56:01.645Z",
+    "lastChecked": "2026-04-30T05:26:27.310Z",
     "healthStatus": "offline",
     "httpStatus": 0,
-    "responseTime": 15000
+    "responseTime": 15000,
+    "price": "freemium",
+    "publisher": "Adobe",
+    "verified": true,
+    "tags": [
+      "PDF",
+      "文档",
+      "阅读器"
+    ],
+    "logo": "/logo/pdf.svg",
+    "platforms": [
+      "mac",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "wifi",
@@ -176,10 +390,25 @@
     "size": "~15MB",
     "status": "online",
     "icon": "📡",
-    "lastChecked": "2026-05-02T04:56:01.709Z",
+    "lastChecked": "2026-04-30T05:26:27.357Z",
     "healthStatus": "online",
     "httpStatus": 301,
-    "responseTime": 63
+    "responseTime": 47,
+    "price": "freemium",
+    "publisher": "Connectify",
+    "verified": true,
+    "tags": [
+      "网络",
+      "热点",
+      "WiFi"
+    ],
+    "logo": "/logo/wifi.svg",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
   },
   {
     "id": "ftp",
@@ -190,10 +419,28 @@
     "size": "~10MB",
     "status": "online",
     "icon": "📂",
-    "lastChecked": "2026-05-02T04:56:02.461Z",
+    "lastChecked": "2026-04-30T05:26:28.087Z",
     "healthStatus": "online",
     "httpStatus": 200,
-    "responseTime": 752
+    "responseTime": 730,
+    "price": "free",
+    "publisher": "FileZilla Project",
+    "verified": true,
+    "tags": [
+      "FTP",
+      "传输",
+      "文件管理"
+    ],
+    "logo": "/logo/ftp.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "wget",
@@ -204,10 +451,28 @@
     "size": "~5MB",
     "status": "online",
     "icon": "⬇️",
-    "lastChecked": "2026-05-02T04:56:03.118Z",
+    "lastChecked": "2026-04-30T05:26:28.694Z",
     "healthStatus": "online",
     "httpStatus": 200,
-    "responseTime": 657
+    "responseTime": 607,
+    "price": "free",
+    "publisher": "GNU Project",
+    "verified": true,
+    "tags": [
+      "下载工具",
+      "命令行",
+      "开源"
+    ],
+    "logo": "/logo/wget.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "packet",
@@ -218,10 +483,28 @@
     "size": "~70MB",
     "status": "online",
     "icon": "📊",
-    "lastChecked": "2026-05-02T04:56:03.225Z",
+    "lastChecked": "2026-04-30T05:26:28.897Z",
     "healthStatus": "online",
     "httpStatus": 200,
-    "responseTime": 107
+    "responseTime": 203,
+    "price": "free",
+    "publisher": "Wireshark Foundation",
+    "verified": true,
+    "tags": [
+      "抓包",
+      "网络分析",
+      "安全"
+    ],
+    "logo": "/logo/packet.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "disk",
@@ -232,10 +515,25 @@
     "size": "~5MB",
     "status": "online",
     "icon": "💿",
-    "lastChecked": "2026-05-02T04:56:04.071Z",
+    "lastChecked": "2026-04-30T05:26:29.943Z",
     "healthStatus": "online",
     "httpStatus": 301,
-    "responseTime": 845
+    "responseTime": 1045,
+    "price": "free",
+    "publisher": "Crystal Dew World",
+    "verified": true,
+    "tags": [
+      "磁盘",
+      "硬件检测",
+      "系统"
+    ],
+    "logo": "/logo/disk.svg",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
   },
   {
     "id": "port",
@@ -246,10 +544,25 @@
     "size": "~1MB",
     "status": "online",
     "icon": "🔌",
-    "lastChecked": "2026-05-02T04:56:04.109Z",
+    "lastChecked": "2026-04-30T05:26:29.968Z",
     "healthStatus": "online",
     "httpStatus": 301,
-    "responseTime": 38
+    "responseTime": 25,
+    "price": "free",
+    "publisher": "Microsoft",
+    "verified": true,
+    "tags": [
+      "端口",
+      "网络",
+      "系统工具"
+    ],
+    "logo": "/logo/port.svg",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
   },
   {
     "id": "ocr",
@@ -260,10 +573,28 @@
     "size": "~20MB",
     "status": "online",
     "icon": "🔍",
-    "lastChecked": "2026-05-02T04:56:04.734Z",
+    "lastChecked": "2026-04-30T05:26:30.545Z",
     "healthStatus": "online",
     "httpStatus": 200,
-    "responseTime": 625
+    "responseTime": 577,
+    "price": "free",
+    "publisher": "Tesseract OCR",
+    "verified": true,
+    "tags": [
+      "OCR",
+      "文字识别",
+      "图像处理"
+    ],
+    "logo": "/logo/ocr.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "qgis",
@@ -274,10 +605,28 @@
     "size": "~400MB",
     "status": "online",
     "icon": "🗺️",
-    "lastChecked": "2026-05-02T04:56:05.261Z",
+    "lastChecked": "2026-04-30T05:26:31.062Z",
     "healthStatus": "online",
     "httpStatus": 200,
-    "responseTime": 527
+    "responseTime": 517,
+    "price": "free",
+    "publisher": "QGIS.org",
+    "verified": true,
+    "tags": [
+      "GIS",
+      "地图",
+      "地理信息"
+    ],
+    "logo": "/logo/qgis.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "screen",
@@ -288,10 +637,28 @@
     "size": "~100MB",
     "status": "online",
     "icon": "🎥",
-    "lastChecked": "2026-05-02T04:56:05.734Z",
+    "lastChecked": "2026-04-30T05:26:31.412Z",
     "healthStatus": "online",
     "httpStatus": 200,
-    "responseTime": 473
+    "responseTime": 349,
+    "price": "free",
+    "publisher": "OBS Project",
+    "verified": true,
+    "tags": [
+      "录屏",
+      "直播",
+      "视频"
+    ],
+    "logo": "/logo/screen.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "video",
@@ -302,10 +669,28 @@
     "size": "~40MB",
     "status": "online",
     "icon": "🎬",
-    "lastChecked": "2026-05-02T04:56:06.285Z",
+    "lastChecked": "2026-04-30T05:26:31.759Z",
     "healthStatus": "online",
     "httpStatus": 200,
-    "responseTime": 551
+    "responseTime": 347,
+    "price": "free",
+    "publisher": "VideoLAN",
+    "verified": true,
+    "tags": [
+      "播放器",
+      "多媒体",
+      "视频"
+    ],
+    "logo": "/logo/video.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
   },
   {
     "id": "gif",
@@ -316,10 +701,25 @@
     "size": "~3MB",
     "status": "online",
     "icon": "🎞️",
-    "lastChecked": "2026-05-02T04:56:06.499Z",
+    "lastChecked": "2026-04-30T05:26:31.794Z",
     "healthStatus": "online",
     "httpStatus": 200,
-    "responseTime": 214
+    "responseTime": 34,
+    "price": "free",
+    "publisher": "Nicke Manarin",
+    "verified": true,
+    "tags": [
+      "录屏",
+      "GIF",
+      "动画"
+    ],
+    "logo": "/logo/gif.svg",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
   },
   {
     "id": "color",
@@ -330,9 +730,24 @@
     "size": "~2MB",
     "status": "online",
     "icon": "🎨",
-    "lastChecked": "2026-05-02T04:56:07.132Z",
+    "lastChecked": "2026-04-30T05:26:32.316Z",
     "healthStatus": "online",
     "httpStatus": 200,
-    "responseTime": 633
+    "responseTime": 522,
+    "price": "free",
+    "publisher": "ColorPicker",
+    "verified": true,
+    "tags": [
+      "设计",
+      "颜色",
+      "取色器"
+    ],
+    "logo": "/logo/color.svg",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
   }
 ]
