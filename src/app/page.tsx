@@ -52,10 +52,12 @@ export default function Home() {
       <header className="sticky top-0 z-40 border-b border-[var(--divider)] bg-surface/80 backdrop-blur-xl">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <img
+            <Image
               src="/apple-touch-icon.png"
               alt="AppGater"
-              className="w-7 h-7 rounded-lg"
+              width={28}
+              height={28}
+              className="rounded-lg"
             />
             <span className="font-display font-semibold text-[15px] tracking-tight">
               AppGater

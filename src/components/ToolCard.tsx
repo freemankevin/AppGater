@@ -23,10 +23,12 @@ export default function ToolCard({ tool, onClick }: ToolCardProps) {
     >
       {/* Header */}
       <div className="flex items-start gap-3.5 p-4 pb-0">
-        <img
+        <Image
           src={logo}
           alt={tool.name}
-          className="w-11 h-11 rounded-lg shrink-0 object-contain bg-[var(--glass-bg)]"
+          width={44}
+          height={44}
+          className="rounded-lg shrink-0 object-contain bg-[#1e1e1e]"
         />
         <div className="flex-1 min-w-0 pt-0.5">
           <div className="flex items-center gap-1.5">
@@ -38,6 +40,9 @@ export default function ToolCard({ tool, onClick }: ToolCardProps) {
               title={styles.text}
             />
           </div>
+          <p className="text-[12px] text-ink-faint truncate mt-0.5">
+            {tool.publisher}
+          </p>
         </div>
       </div>
 
@@ -52,7 +57,7 @@ export default function ToolCard({ tool, onClick }: ToolCardProps) {
           {tool.platforms.map((p) => (
             <span
               key={p}
-              className="text-[11px] px-1.5 py-0.5 rounded bg-[var(--glass-bg)] text-ink-faint border border-[var(--glass-border)]"
+              className="text-[11px] px-1.5 py-0.5 rounded bg-[var(--glass-bg)] text-ink-muted border border-[var(--glass-border)]"
             >
               {PLATFORM_LABELS[p] || p}
             </span>
@@ -60,7 +65,7 @@ export default function ToolCard({ tool, onClick }: ToolCardProps) {
         </div>
         <div className="flex items-center gap-2">
           {tool.architectures.map((a) => (
-            <span key={a} className="text-[11px] text-ink-faint">
+            <span key={a} className="text-[11px] text-ink-muted">
               {ARCH_LABELS[a] || a}
             </span>
           ))}

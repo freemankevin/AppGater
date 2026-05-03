@@ -1,9 +1,9 @@
-import { Metadata } from 'next';
+import Image from 'next/image';\nimport { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Download, ExternalLink } from 'lucide-react';
 import CopyButton from '@/components/CopyButton';
-import { getToolById, getTools, getLogoPath } from '@/lib/tools';
+import { getToolById, getTools, getLogoPath, getDisplayTags } from '@/lib/tools';
 import { getStatusStyles, isSafeOfficialUrl, PRICE_LABELS } from '@/lib/download';
 import { PLATFORM_LABELS, ARCH_LABELS } from '@/lib/types';
 
@@ -52,10 +52,12 @@ export default async function ToolPage({ params }: ToolPageProps) {
       <section className="max-w-3xl mx-auto px-4 py-10">
         {/* Info */}
         <div className="flex items-start gap-4 mb-8">
-          <img
+          <Image
             src={logo}
             alt={tool.name}
-            className="w-16 h-16 rounded-xl bg-[var(--glass-bg)] object-contain shrink-0"
+            width={64}
+            height={64}
+            className="rounded-xl bg-[#1e1e1e] object-contain shrink-0"
           />
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-1">
@@ -112,18 +114,24 @@ export default async function ToolPage({ params }: ToolPageProps) {
         </div>
 
         {/* Tags */}
-        {tool.tags && tool.tags.length > 0 && (
-          <div className="flex flex-wrap gap-2 mb-8">
-            {tool.tags.map((tag) => (
-              <span
-                key={tag}
-                className="text-[12px] px-2.5 py-1 rounded-md bg-[var(--glass-bg)] border border-[var(--glass-border)] text-ink-faint"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        )}
+        {(() => {
+          const displayTags = getDisplayTags(tool);
+          return displayTags.length > 0 ? (
+            <div className="mb-8">
+              <p className="text-[11px] text-ink-faint mb-2">标签</p>
+              <div className="flex flex-wrap gap-2">
+                {displayTags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-[12px] px-2.5 py-1 rounded-md bg-[var(--glass-bg)] border border-[var(--glass-border)] text-ink-muted"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ) : null;
+        })()}
 
         {/* Actions */}
         <div className="flex flex-col sm:flex-row gap-2 mb-10">

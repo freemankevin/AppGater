@@ -1,9 +1,9 @@
 'use client';
 
-import { X, Download } from 'lucide-react';
+import Image from 'next/image';\nimport { X, Download } from 'lucide-react';
 import { Tool, PRICE_LABELS, PLATFORM_LABELS, ARCH_LABELS } from '@/lib/types';
 import { isSafeOfficialUrl } from '@/lib/download';
-import { getLogoPath } from '@/lib/tools';
+import { getLogoPath, getDisplayTags } from '@/lib/tools';
 
 interface DownloadModalProps {
   tool: Tool | null;
@@ -37,10 +37,12 @@ export default function DownloadModal({
         {/* Header */}
         <div className="flex items-start justify-between mb-5">
           <div className="flex items-center gap-3">
-            <img
+            <Image
               src={logo}
               alt={tool.name}
-              className="w-10 h-10 rounded-lg bg-[var(--glass-bg)] object-contain"
+              width={40}
+              height={40}
+              className="rounded-lg bg-[#1e1e1e] object-contain"
             />
             <div>
               <h3 className="font-medium text-[15px] text-ink">{tool.name}</h3>
@@ -56,18 +58,24 @@ export default function DownloadModal({
         </div>
 
         {/* Tags */}
-        {tool.tags && tool.tags.length > 0 && (
-          <div className="flex flex-wrap gap-1.5 mb-4">
-            {tool.tags.map((tag) => (
-              <span
-                key={tag}
-                className="text-[11px] px-2 py-1 rounded-md bg-[var(--glass-bg)] border border-[var(--glass-border)] text-ink-muted"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        )}
+        {(() => {
+          const displayTags = getDisplayTags(tool);
+          return displayTags.length > 0 ? (
+            <div className="mb-4">
+              <p className="text-[11px] text-ink-faint mb-1.5">标签</p>
+              <div className="flex flex-wrap gap-1.5">
+                {displayTags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-[11px] px-2 py-1 rounded-md bg-[var(--glass-bg)] border border-[var(--glass-border)] text-ink-muted"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ) : null;
+        })()}
 
         {/* Platforms */}
         <div className="mb-4">
