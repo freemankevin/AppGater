@@ -33,7 +33,10 @@ export function isSafeOfficialUrl(url: string): boolean {
       'colorpicker.fr',
       'docs.microsoft.com',
     ];
-    return safeDomains.some(domain => parsed.hostname.includes(domain));
+    return safeDomains.some(domain => {
+      const host = parsed.hostname.toLowerCase();
+      return host === domain || host.endsWith(`.${domain}`);
+    });
   } catch {
     return false;
   }
