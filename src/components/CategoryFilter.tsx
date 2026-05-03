@@ -22,7 +22,7 @@ export default function CategoryFilter({
           className={`px-3.5 py-1.5 rounded-lg text-[13px] font-medium transition-colors ${
             activeCategory === cat.id
               ? 'bg-[var(--glass-active-bg)] text-ink border border-[var(--glass-active-border)]'
-              : 'text-ink-faint hover:text-ink-muted border border-transparent'
+              : 'text-ink-muted hover:text-ink border border-transparent'
           }`}
         >
           {cat.name}

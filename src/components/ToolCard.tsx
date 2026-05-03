@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Tool, PRICE_LABELS, PLATFORM_LABELS, ARCH_LABELS } from '@/lib/types';
 import { getStatusStyles } from '@/lib/download';
 import { getLogoPath } from '@/lib/tools';

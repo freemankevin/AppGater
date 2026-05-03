@@ -1,4 +1,5 @@
-import Image from 'next/image';\nimport { Metadata } from 'next';
+import Image from 'next/image';
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Download, ExternalLink } from 'lucide-react';

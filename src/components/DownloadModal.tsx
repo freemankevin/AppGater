@@ -1,6 +1,7 @@
 'use client';
 
-import Image from 'next/image';\nimport { X, Download } from 'lucide-react';
+import Image from 'next/image';
+import { X, Download } from 'lucide-react';
 import { Tool, PRICE_LABELS, PLATFORM_LABELS, ARCH_LABELS } from '@/lib/types';
 import { isSafeOfficialUrl } from '@/lib/download';
 import { getLogoPath, getDisplayTags } from '@/lib/tools';
