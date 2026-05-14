@@ -40,14 +40,14 @@
   --text-faint: #525252;
   --code-bg: rgba(0,0,0,0.06);
 
-  --glass-bg: rgba(0,0,0,0.06);
-  --glass-bg-strong: rgba(0,0,0,0.08);
-  --glass-border: rgba(0,0,0,0.12);
-  --glass-hover-bg: rgba(0,0,0,0.08);
-  --glass-hover-border: rgba(0,0,0,0.16);
-  --glass-active-bg: rgba(0,0,0,0.1);
-  --glass-active-border: rgba(0,0,0,0.16);
-  --divider: rgba(0,0,0,0.1);
+  --glass-bg: #ffffff;
+  --glass-bg-strong: #f5f5f5;
+  --glass-border: #e5e5e5;
+  --glass-hover-bg: #f5f5f5;
+  --glass-hover-border: #d4d4d4;
+  --glass-active-bg: #f0f0f0;
+  --glass-active-border: #d4d4d4;
+  --divider: #e5e5e5;
 }
 
 .dark {
@@ -109,6 +109,27 @@
     border: 1px solid var(--glass-border-strong);
     backdrop-filter: blur(12px);
   }
+
+  .glass-green {
+    background: rgba(16, 185, 129, 0.03);
+    border: 1px solid rgba(16, 185, 129, 0.08);
+    backdrop-filter: blur(12px);
+  }
+
+  .text-gradient-green {
+    background: linear-gradient(90deg, #34d399, #6ee7b7, #34d399);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .animate-delay-100 { animation-delay: 0.1s; }
+  .animate-delay-200 { animation-delay: 0.2s; }
+  .animate-delay-300 { animation-delay: 0.3s; }
+  .animate-delay-400 { animation-delay: 0.4s; }
+  .animate-delay-500 { animation-delay: 0.5s; }
+  .animate-delay-600 { animation-delay: 0.6s; }
 }
 
 ::-webkit-scrollbar {
@@ -127,4 +148,18 @@
 
 .dark ::-webkit-scrollbar-thumb {
   background: #333;
+}
+
+/* Tool logo theming */
+.tool-logo {
+  transition: filter 0.2s ease;
+}
+
+.dark .tool-logo {
+  filter: brightness(1.15) contrast(1.05);
+}
+
+/* Monochrome icons: invert in dark mode so black becomes white */
+.dark .tool-logo[src*="/vscode.svg"] {
+  filter: invert(1) brightness(2);
 }

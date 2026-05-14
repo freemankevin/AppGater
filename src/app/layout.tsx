@@ -4,8 +4,8 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'AppGater',
-  description: '发现、评分和下载全球优质官方软件，安全、简洁、无广告',
-  keywords: ['软件市场', '官方下载', '开发工具', '办公软件', '安全下载'],
+  description: 'Discover, rate and download quality software safely, cleanly, ad-free',
+  keywords: ['software market', 'official download', 'dev tools', 'office tools', 'safe download'],
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className="font-sans min-h-screen antialiased">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           {children}

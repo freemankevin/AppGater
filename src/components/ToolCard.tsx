@@ -24,13 +24,20 @@ export default function ToolCard({ tool, onClick }: ToolCardProps) {
     >
       {/* Header */}
       <div className="flex items-start gap-3.5 p-4 pb-0">
-        <Image
-          src={logo}
-          alt={tool.name}
-          width={44}
-          height={44}
-          className="rounded-lg shrink-0 object-contain bg-[#1e1e1e]"
-        />
+        {logo ? (
+          <Image
+            src={logo}
+            alt={tool.name}
+            width={44}
+            height={44}
+            className="tool-logo rounded-lg shrink-0 object-contain"
+            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+          />
+        ) : (
+          <span className="text-2xl w-11 h-11 flex items-center justify-center shrink-0">
+            {tool.icon}
+          </span>
+        )}
         <div className="flex-1 min-w-0 pt-0.5">
           <div className="flex items-center gap-1.5">
             <h3 className="font-medium text-[15px] text-ink truncate leading-tight">

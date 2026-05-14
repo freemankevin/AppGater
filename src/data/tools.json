@@ -3,7 +3,7 @@
     "id": "vscode",
     "name": "VSCode",
     "category": "dev",
-    "desc": "微软官方代码编辑器",
+    "desc": "Microsoft code editor",
     "official": "https://code.visualstudio.com/download",
     "size": "80MB",
     "status": "online",
@@ -16,11 +16,11 @@
     "publisher": "Microsoft",
     "verified": true,
     "tags": [
-      "编辑器",
+      "Editor",
       "IDE",
-      "微软"
+      "Microsoft"
     ],
-    "logo": "/logo/vscode.svg",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
     "platforms": [
       "mac",
       "linux",
@@ -32,27 +32,27 @@
     ]
   },
   {
-    "id": "docker",
-    "name": "Docker Desktop",
+    "id": "podman",
+    "name": "Podman",
     "category": "dev",
-    "desc": "容器化开发环境",
-    "official": "https://www.docker.com/products/docker-desktop",
-    "size": "500MB",
+    "desc": "Open-source container engine",
+    "official": "https://podman.io/",
+    "size": "150MB",
     "status": "online",
     "icon": "🐳",
     "lastChecked": "2026-05-11T05:54:21.964Z",
     "healthStatus": "online",
     "httpStatus": 301,
     "responseTime": 145,
-    "price": "freemium",
-    "publisher": "Docker Inc.",
+    "price": "free",
+    "publisher": "Red Hat",
     "verified": true,
     "tags": [
-      "容器",
-      "虚拟化",
-      "DevOps"
+      "Container",
+      "Virtualization",
+      "Open source"
     ],
-    "logo": "/logo/docker.svg",
+    "logo": "https://podman.io/logos/optimized/podman-3-logo-266w-253h.webp",
     "platforms": [
       "mac",
       "linux",
@@ -67,7 +67,7 @@
     "id": "nodejs",
     "name": "Node.js",
     "category": "dev",
-    "desc": "JavaScript 运行时",
+    "desc": "JavaScript runtime",
     "official": "https://nodejs.org/",
     "size": "30MB",
     "status": "online",
@@ -80,11 +80,11 @@
     "publisher": "OpenJS Foundation",
     "verified": true,
     "tags": [
-      "运行时",
+      "Runtime",
       "JavaScript",
-      "后端"
+      "Backend"
     ],
-    "logo": "/logo/nodejs.svg",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
     "platforms": [
       "mac",
       "linux",
@@ -99,7 +99,7 @@
     "id": "python",
     "name": "Python",
     "category": "dev",
-    "desc": "编程语言官方环境",
+    "desc": "Programming language environment",
     "official": "https://www.python.org/downloads/",
     "size": "25MB",
     "status": "online",
@@ -112,11 +112,11 @@
     "publisher": "Python Software Foundation",
     "verified": true,
     "tags": [
-      "编程语言",
-      "脚本",
+      "Programming language",
+      "Scripting",
       "AI"
     ],
-    "logo": "/logo/python.svg",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
     "platforms": [
       "mac",
       "linux",
@@ -131,7 +131,7 @@
     "id": "git",
     "name": "Git",
     "category": "dev",
-    "desc": "分布式版本控制",
+    "desc": "Distributed version control",
     "official": "https://git-scm.com/downloads",
     "size": "50MB",
     "status": "online",
@@ -144,11 +144,11 @@
     "publisher": "Software Freedom Conservancy",
     "verified": true,
     "tags": [
-      "版本控制",
-      "命令行",
-      "协作"
+      "Version control",
+      "Command line",
+      "Collaboration"
     ],
-    "logo": "/logo/git.svg",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
     "platforms": [
       "mac",
       "linux",
@@ -163,24 +163,88 @@
     "id": "go",
     "name": "Go",
     "category": "dev",
-    "desc": "Google 编程语言",
+    "desc": "Google programming language",
     "official": "https://go.dev/dl/",
     "size": "100MB",
-    "status": "offline",
+    "status": "online",
     "icon": "🐹",
     "lastChecked": "2026-05-11T05:54:22.182Z",
-    "healthStatus": "offline",
-    "httpStatus": 405,
+    "healthStatus": "online",
+    "httpStatus": 200,
     "responseTime": 85,
     "price": "free",
     "publisher": "Google",
     "verified": true,
     "tags": [
-      "编程语言",
-      "后端",
-      "云原生"
+      "Programming language",
+      "Backend",
+      "Cloud native"
     ],
-    "logo": "/logo/go.svg",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "ruby",
+    "name": "Ruby",
+    "category": "dev",
+    "desc": "Dynamic programming language",
+    "official": "https://www.ruby-lang.org/en/",
+    "size": "20MB",
+    "status": "online",
+    "icon": "💎",
+    "lastChecked": "2026-05-11T05:55:09.816Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 80,
+    "price": "free",
+    "publisher": "Ruby Community",
+    "verified": true,
+    "tags": [
+      "Programming language",
+      "Scripting",
+      "Web"
+    ],
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "rust",
+    "name": "Rust",
+    "category": "dev",
+    "desc": "Survival video game",
+    "official": "https://rust.facepunch.com/",
+    "size": "10GB",
+    "status": "online",
+    "icon": "⚙️",
+    "lastChecked": "2026-05-11T05:55:09.816Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 110,
+    "price": "paid",
+    "publisher": "Facepunch Studios",
+    "verified": true,
+    "tags": [
+      "Game",
+      "Survival",
+      "Multiplayer"
+    ],
+    "logo": "https://rust.facepunch.com/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -195,8 +259,8 @@
     "id": "java",
     "name": "Java JDK",
     "category": "dev",
-    "desc": "Oracle/OpenJDK",
-    "official": "https://www.oracle.com/java/technologies/downloads/",
+    "desc": "Eclipse Temurin JDK (Adoptium)",
+    "official": "https://adoptium.net/",
     "size": "150MB",
     "status": "online",
     "icon": "☕",
@@ -205,14 +269,14 @@
     "httpStatus": 200,
     "responseTime": 34,
     "price": "free",
-    "publisher": "Oracle / OpenJDK",
+    "publisher": "Adoptium",
     "verified": true,
     "tags": [
-      "编程语言",
-      "企业级",
+      "Programming language",
+      "Enterprise",
       "JVM"
     ],
-    "logo": "/logo/java.svg",
+    "logo": "https://adoptium.net/images/adoptium-logo-dark.svg",
     "platforms": [
       "mac",
       "linux",
@@ -242,9 +306,9 @@
     "tags": [
       "IDE",
       "Python",
-      "开发工具"
+      "Development tools"
     ],
-    "logo": "/logo/pycharm.svg",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg",
     "platforms": [
       "mac",
       "linux",
@@ -257,28 +321,29 @@
   },
   {
     "id": "office",
-    "name": "Microsoft Office",
+    "name": "ONLYOFFICE",
     "category": "office",
-    "desc": "办公套件官方部署工具",
-    "official": "https://www.microsoft.com/microsoft-365",
-    "size": "1GB",
+    "desc": "Open-source office suite",
+    "official": "https://www.onlyoffice.com/",
+    "size": "200MB",
     "status": "online",
     "icon": "📎",
     "lastChecked": "2026-05-11T05:54:22.365Z",
     "healthStatus": "online",
-    "httpStatus": 302,
-    "responseTime": 35,
-    "price": "paid",
-    "publisher": "Microsoft",
+    "httpStatus": 200,
+    "responseTime": 85,
+    "price": "free",
+    "publisher": "Ascensio System SIA",
     "verified": true,
     "tags": [
-      "办公套件",
-      "文档",
-      "生产力"
+      "Office suite",
+      "Document",
+      "Productivity"
     ],
-    "logo": "/logo/office.svg",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/5/59/ONLYOFFICE_logo_%28symbol%29.svg",
     "platforms": [
       "mac",
+      "linux",
       "windows"
     ],
     "architectures": [
@@ -290,7 +355,7 @@
     "id": "typora",
     "name": "Typora",
     "category": "office",
-    "desc": "Markdown 编辑器",
+    "desc": "Markdown editor",
     "official": "https://typora.io/",
     "size": "50MB",
     "status": "online",
@@ -304,10 +369,10 @@
     "verified": true,
     "tags": [
       "Markdown",
-      "写作",
-      "编辑器"
+      "Writing",
+      "Editor"
     ],
-    "logo": "/logo/typora.svg",
+    "logo": "https://typora.io/img/icon_256x256.png",
     "platforms": [
       "mac",
       "linux",
@@ -322,7 +387,7 @@
     "id": "sublime",
     "name": "Sublime Text",
     "category": "office",
-    "desc": "轻量代码/文本编辑",
+    "desc": "Lightweight code/text editor",
     "official": "https://www.sublimetext.com/download",
     "size": "20MB",
     "status": "online",
@@ -335,11 +400,11 @@
     "publisher": "Sublime HQ",
     "verified": true,
     "tags": [
-      "编辑器",
-      "轻量",
-      "代码"
+      "Editor",
+      "Lightweight",
+      "Code"
     ],
-    "logo": "/logo/sublime.svg",
+    "logo": "https://www.sublimetext.com/images/logo.svg",
     "platforms": [
       "mac",
       "linux",
@@ -351,27 +416,57 @@
     ]
   },
   {
-    "id": "pdf",
-    "name": "PDF 工具集",
+    "id": "sumatrapdf",
+    "name": "Sumatra PDF",
     "category": "office",
-    "desc": "官方 PDF 处理工具",
-    "official": "https://www.adobe.com/acrobat.html",
-    "size": "200MB",
-    "status": "offline",
+    "desc": "Lightweight PDF reader",
+    "official": "https://www.sumatrapdfreader.org/free-pdf-reader",
+    "size": "10MB",
+    "status": "online",
     "icon": "📄",
     "lastChecked": "2026-05-11T05:55:09.816Z",
-    "healthStatus": "offline",
-    "httpStatus": 0,
-    "responseTime": 15000,
-    "price": "freemium",
-    "publisher": "Adobe",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 120,
+    "price": "free",
+    "publisher": "Sumatra PDF",
     "verified": true,
     "tags": [
       "PDF",
-      "文档",
-      "阅读器"
+      "Reader",
+      "Lightweight"
     ],
-    "logo": "/logo/pdf.svg",
+    "logo": "https://www.sumatrapdfreader.org/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "pdfgear",
+    "name": "PDFgear",
+    "category": "office",
+    "desc": "Free PDF editor",
+    "official": "https://www.pdfgear.com/",
+    "size": "150MB",
+    "status": "online",
+    "icon": "📄",
+    "lastChecked": "2026-05-11T05:55:09.816Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 95,
+    "price": "free",
+    "publisher": "PDFgear",
+    "verified": true,
+    "tags": [
+      "PDF",
+      "Editor",
+      "Converter"
+    ],
+    "logo": "https://www.pdfgear.com/img/icon.png",
     "platforms": [
       "mac",
       "windows"
@@ -382,27 +477,27 @@
     ]
   },
   {
-    "id": "wifi",
-    "name": "WiFi 热点工具",
+    "id": "mypublicwifi",
+    "name": "MyPublicWiFi",
     "category": "network",
-    "desc": "Windows 热点共享",
-    "official": "https://www.connectify.me/",
-    "size": "15MB",
+    "desc": "Virtual WiFi hotspot",
+    "official": "https://mypublicwifi.com/publicwifi/en/index.html",
+    "size": "5MB",
     "status": "online",
     "icon": "📡",
     "lastChecked": "2026-05-11T05:55:09.858Z",
     "healthStatus": "online",
     "httpStatus": 301,
     "responseTime": 42,
-    "price": "freemium",
-    "publisher": "Connectify",
+    "price": "free",
+    "publisher": "MyPublicWiFi",
     "verified": true,
     "tags": [
-      "网络",
-      "热点",
+      "Network",
+      "Hotspot",
       "WiFi"
     ],
-    "logo": "/logo/wifi.svg",
+    "logo": "https://mypublicwifi.com/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -412,9 +507,9 @@
   },
   {
     "id": "ftp",
-    "name": "FTP 工具",
+    "name": "FileZilla",
     "category": "network",
-    "desc": "文件传输客户端",
+    "desc": "Free cross-platform FTP/SFTP client",
     "official": "https://filezilla-project.org/",
     "size": "10MB",
     "status": "online",
@@ -428,10 +523,10 @@
     "verified": true,
     "tags": [
       "FTP",
-      "传输",
-      "文件管理"
+      "Transfer",
+      "File manager"
     ],
-    "logo": "/logo/ftp.svg",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/filezilla/filezilla-original.svg",
     "platforms": [
       "mac",
       "linux",
@@ -446,7 +541,7 @@
     "id": "wget",
     "name": "Wget",
     "category": "network",
-    "desc": "命令行下载工具",
+    "desc": "Command-line download tool",
     "official": "https://eternallybored.org/misc/wget/",
     "size": "5MB",
     "status": "online",
@@ -459,11 +554,11 @@
     "publisher": "GNU Project",
     "verified": true,
     "tags": [
-      "下载工具",
-      "命令行",
-      "开源"
+      "Download tool",
+      "Command line",
+      "Open source"
     ],
-    "logo": "/logo/wget.svg",
+    "logo": "https://eternallybored.org/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -476,9 +571,9 @@
   },
   {
     "id": "packet",
-    "name": "网络抓包",
+    "name": "Network Packet Capture",
     "category": "network",
-    "desc": "Wireshark 官方版",
+    "desc": "Wireshark",
     "official": "https://www.wireshark.org/download.html",
     "size": "70MB",
     "status": "online",
@@ -491,11 +586,11 @@
     "publisher": "Wireshark Foundation",
     "verified": true,
     "tags": [
-      "抓包",
-      "网络分析",
-      "安全"
+      "Packet capture",
+      "Network analysis",
+      "Security"
     ],
-    "logo": "/logo/packet.svg",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/d/df/Wireshark_icon.svg",
     "platforms": [
       "mac",
       "linux",
@@ -508,7 +603,7 @@
   },
   {
     "id": "disk",
-    "name": "磁盘检查",
+    "name": "Disk Check",
     "category": "system",
     "desc": "CrystalDiskInfo",
     "official": "https://crystalmark.info/",
@@ -523,11 +618,11 @@
     "publisher": "Crystal Dew World",
     "verified": true,
     "tags": [
-      "磁盘",
-      "硬件检测",
-      "系统"
+      "Disk",
+      "Hardware detection",
+      "System"
     ],
-    "logo": "/logo/disk.svg",
+    "logo": "https://crystalmark.info/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -537,9 +632,9 @@
   },
   {
     "id": "port",
-    "name": "端口管理工具",
+    "name": "Port Manager",
     "category": "system",
-    "desc": "TCPView 官方版",
+    "desc": "TCPView",
     "official": "https://docs.microsoft.com/sysinternals/downloads/tcpview",
     "size": "1MB",
     "status": "online",
@@ -552,11 +647,11 @@
     "publisher": "Microsoft",
     "verified": true,
     "tags": [
-      "端口",
-      "网络",
-      "系统工具"
+      "Port",
+      "Network",
+      "System tools"
     ],
-    "logo": "/logo/port.svg",
+    "logo": "https://learn.microsoft.com/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -566,9 +661,9 @@
   },
   {
     "id": "ocr",
-    "name": "OCR 工具",
+    "name": "OCR Tool",
     "category": "system",
-    "desc": "文字识别工具",
+    "desc": "Text recognition tool",
     "official": "https://github.com/tesseract-ocr/tesseract",
     "size": "20MB",
     "status": "online",
@@ -582,10 +677,10 @@
     "verified": true,
     "tags": [
       "OCR",
-      "文字识别",
-      "图像处理"
+      "Text recognition",
+      "Image processing"
     ],
-    "logo": "/logo/ocr.svg",
+    "logo": "https://github.com/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -600,7 +695,7 @@
     "id": "qgis",
     "name": "QGIS",
     "category": "system",
-    "desc": "开源地理信息系统",
+    "desc": "Open-source GIS",
     "official": "https://qgis.org/download/",
     "size": "400MB",
     "status": "online",
@@ -614,10 +709,10 @@
     "verified": true,
     "tags": [
       "GIS",
-      "地图",
-      "地理信息"
+      "Map",
+      "Geographic information"
     ],
-    "logo": "/logo/qgis.svg",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/qgis/qgis-original.svg",
     "platforms": [
       "mac",
       "linux",
@@ -630,9 +725,9 @@
   },
   {
     "id": "screen",
-    "name": "录屏软件",
+    "name": "Screen Recorder",
     "category": "media",
-    "desc": "OBS Studio 官方版",
+    "desc": "OBS Studio",
     "official": "https://obsproject.com/download",
     "size": "100MB",
     "status": "online",
@@ -645,11 +740,11 @@
     "publisher": "OBS Project",
     "verified": true,
     "tags": [
-      "录屏",
-      "直播",
-      "视频"
+      "Screen recording",
+      "Live streaming",
+      "Video"
     ],
-    "logo": "/logo/screen.svg",
+    "logo": "https://cdn.simpleicons.org/obsstudio/302E31",
     "platforms": [
       "mac",
       "linux",
@@ -662,7 +757,7 @@
   },
   {
     "id": "video",
-    "name": "视频播放器",
+    "name": "Video Player",
     "category": "media",
     "desc": "VLC Media Player",
     "official": "https://www.videolan.org/vlc/",
@@ -677,11 +772,11 @@
     "publisher": "VideoLAN",
     "verified": true,
     "tags": [
-      "播放器",
-      "多媒体",
-      "视频"
+      "Player",
+      "Multimedia",
+      "Video"
     ],
-    "logo": "/logo/video.svg",
+    "logo": "https://cdn.simpleicons.org/vlcmediaplayer/FF8800",
     "platforms": [
       "mac",
       "linux",
@@ -694,9 +789,9 @@
   },
   {
     "id": "gif",
-    "name": "Gif 录屏",
+    "name": "GIF Recorder",
     "category": "media",
-    "desc": "ScreenToGif 官方版",
+    "desc": "ScreenToGif",
     "official": "https://www.screentogif.com/",
     "size": "3MB",
     "status": "online",
@@ -709,11 +804,11 @@
     "publisher": "Nicke Manarin",
     "verified": true,
     "tags": [
-      "录屏",
+      "Screen recording",
       "GIF",
-      "动画"
+      "Animation"
     ],
-    "logo": "/logo/gif.svg",
+    "logo": "https://nickemanarin.github.io/ScreenToGif-Website/logos/ms-icon-144x144.png",
     "platforms": [
       "windows"
     ],
@@ -723,9 +818,9 @@
   },
   {
     "id": "color",
-    "name": "颜色拾取器",
+    "name": "Color Picker",
     "category": "media",
-    "desc": "ColorPicker 官方工具",
+    "desc": "ColorPicker",
     "official": "https://colorpicker.fr/",
     "size": "2MB",
     "status": "online",
@@ -738,16 +833,2440 @@
     "publisher": "ColorPicker",
     "verified": true,
     "tags": [
-      "设计",
-      "颜色",
-      "取色器"
+      "Design",
+      "Color",
+      "Color picker"
     ],
-    "logo": "/logo/color.svg",
+    "logo": "https://colorpicker.fr/favicon.ico",
     "platforms": [
       "windows"
     ],
     "architectures": [
       "x86"
+    ]
+  },
+  {
+    "id": "podman-desktop",
+    "name": "Podman Desktop",
+    "category": "dev",
+    "desc": "Container management GUI for Podman",
+    "official": "https://podman-desktop.io/",
+    "size": "280MB",
+    "status": "online",
+    "icon": "🐳",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 150,
+    "price": "free",
+    "publisher": "Red Hat",
+    "verified": true,
+    "tags": [
+      "Container",
+      "GUI",
+      "Virtualization"
+    ],
+    "logo": "https://podman.io/logos/optimized/podman-3-logo-266w-253h.webp",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "tortoisegit",
+    "name": "TortoiseGit",
+    "category": "dev",
+    "desc": "Git client for Windows with Shell Integration",
+    "official": "https://tortoisegit.org/",
+    "size": "20MB",
+    "status": "online",
+    "icon": "🐢",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 120,
+    "price": "free",
+    "publisher": "TortoiseGit",
+    "verified": true,
+    "tags": [
+      "Git",
+      "GUI",
+      "Version control"
+    ],
+    "logo": "https://tortoisegit.org/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "hugo",
+    "name": "Hugo",
+    "category": "dev",
+    "desc": "Static site generator built with Go",
+    "official": "https://gohugo.io/",
+    "size": "25MB",
+    "status": "online",
+    "icon": "📄",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 100,
+    "price": "free",
+    "publisher": "Hugo Authors",
+    "verified": true,
+    "tags": [
+      "Static site",
+      "Generator",
+      "Go"
+    ],
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hugo/hugo-original.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "tablego",
+    "name": "TableGo",
+    "category": "dev",
+    "desc": "Database design and code generation tool",
+    "official": "https://github.com/Hzwei087/TableGo",
+    "size": "75MB",
+    "status": "online",
+    "icon": "🗃️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 300,
+    "price": "free",
+    "publisher": "TableGo",
+    "verified": false,
+    "tags": [
+      "Database",
+      "Code generation",
+      "Design"
+    ],
+    "logo": "https://github.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "excalidraw",
+    "name": "Excalidraw",
+    "category": "dev",
+    "desc": "Virtual whiteboard for sketching hand-drawn diagrams",
+    "official": "https://excalidraw.com/",
+    "size": "110MB",
+    "status": "online",
+    "icon": "✏️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 200,
+    "price": "free",
+    "publisher": "Excalidraw",
+    "verified": true,
+    "tags": [
+      "Diagram",
+      "Whiteboard",
+      "Design"
+    ],
+    "logo": "https://excalidraw.com/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "chromedriver",
+    "name": "ChromeDriver",
+    "category": "dev",
+    "desc": "WebDriver for Chrome browser automation",
+    "official": "https://chromedriver.chromium.org/",
+    "size": "9MB",
+    "status": "online",
+    "icon": "🤖",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 80,
+    "price": "free",
+    "publisher": "Google",
+    "verified": true,
+    "tags": [
+      "Automation",
+      "Testing",
+      "Browser"
+    ],
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "wps",
+    "name": "WPS Office",
+    "category": "office",
+    "desc": "Lightweight office suite by Kingsoft",
+    "official": "https://www.wps.com/",
+    "size": "240MB",
+    "status": "online",
+    "icon": "📊",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 180,
+    "price": "freemium",
+    "publisher": "Kingsoft",
+    "verified": true,
+    "tags": [
+      "Office suite",
+      "Document",
+      "Spreadsheet"
+    ],
+    "logo": "https://www.wps.com/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "microsoft-office",
+    "name": "Microsoft Office",
+    "category": "office",
+    "desc": "Microsoft productivity suite",
+    "official": "https://www.microsoft.com/microsoft-365",
+    "size": "4GB",
+    "status": "online",
+    "icon": "📎",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 100,
+    "price": "paid",
+    "publisher": "Microsoft",
+    "verified": true,
+    "tags": [
+      "Office suite",
+      "Document",
+      "Productivity"
+    ],
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg",
+    "platforms": [
+      "mac",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "office-deployment-tool",
+    "name": "Office Deployment Tool",
+    "category": "office",
+    "desc": "Command-line tool for deploying Office",
+    "official": "https://www.microsoft.com/download/details.aspx?id=49117",
+    "size": "4MB",
+    "status": "online",
+    "icon": "⚙️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 90,
+    "price": "free",
+    "publisher": "Microsoft",
+    "verified": true,
+    "tags": [
+      "Office",
+      "Deployment",
+      "Command line"
+    ],
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "baidu-translate",
+    "name": "百度翻译",
+    "category": "office",
+    "desc": "Baidu translation desktop client",
+    "official": "https://fanyi.baidu.com/appdownload/download.html",
+    "size": "115MB",
+    "status": "online",
+    "icon": "🌐",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 200,
+    "price": "free",
+    "publisher": "Baidu",
+    "verified": true,
+    "tags": [
+      "Translation",
+      "Chinese",
+      "Language"
+    ],
+    "logo": "https://fanyi.baidu.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "diffinity",
+    "name": "Diffinity",
+    "category": "office",
+    "desc": "Fast and accurate text comparison tool",
+    "official": "https://truehumandesign.se/s_diffinity.php",
+    "size": "1MB",
+    "status": "online",
+    "icon": "📑",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 150,
+    "price": "free",
+    "publisher": "True Human Design",
+    "verified": false,
+    "tags": [
+      "Diff",
+      "Text comparison",
+      "Merge"
+    ],
+    "logo": "https://truehumandesign.se/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "winscp",
+    "name": "WinSCP",
+    "category": "network",
+    "desc": "Free SFTP/SCP/FTP client for Windows",
+    "official": "https://winscp.net/",
+    "size": "11MB",
+    "status": "online",
+    "icon": "📂",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 100,
+    "price": "free",
+    "publisher": "Martin Prikryl",
+    "verified": true,
+    "tags": [
+      "FTP",
+      "SFTP",
+      "File transfer"
+    ],
+    "logo": "https://winscp.net/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "chrome",
+    "name": "Google Chrome",
+    "category": "network",
+    "desc": "Fast and secure web browser by Google",
+    "official": "https://www.google.com/chrome/",
+    "size": "100MB",
+    "status": "online",
+    "icon": "🌐",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 80,
+    "price": "free",
+    "publisher": "Google",
+    "verified": true,
+    "tags": [
+      "Browser",
+      "Web",
+      "Google"
+    ],
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "firefox",
+    "name": "Mozilla Firefox",
+    "category": "network",
+    "desc": "Privacy-focused open-source browser",
+    "official": "https://www.mozilla.org/firefox/",
+    "size": "65MB",
+    "status": "online",
+    "icon": "🦊",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 120,
+    "price": "free",
+    "publisher": "Mozilla",
+    "verified": true,
+    "tags": [
+      "Browser",
+      "Privacy",
+      "Open source"
+    ],
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firefox/firefox-original.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "advanced-ip-scanner",
+    "name": "Advanced IP Scanner",
+    "category": "network",
+    "desc": "Fast and free network scanner",
+    "official": "https://www.advanced-ip-scanner.com/",
+    "size": "21MB",
+    "status": "online",
+    "icon": "🔍",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 180,
+    "price": "free",
+    "publisher": "Famatech",
+    "verified": true,
+    "tags": [
+      "Network",
+      "Scanner",
+      "Security"
+    ],
+    "logo": "https://www.advanced-ip-scanner.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "nmap",
+    "name": "Nmap",
+    "category": "network",
+    "desc": "Network discovery and security auditing tool",
+    "official": "https://nmap.org/",
+    "size": "35MB",
+    "status": "online",
+    "icon": "🗺️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 90,
+    "price": "free",
+    "publisher": "Nmap Project",
+    "verified": true,
+    "tags": [
+      "Network",
+      "Scanner",
+      "Security"
+    ],
+    "logo": "https://nmap.org/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "npcap",
+    "name": "Npcap",
+    "category": "network",
+    "desc": "Packet capture library for Windows",
+    "official": "https://npcap.com/",
+    "size": "1MB",
+    "status": "online",
+    "icon": "📦",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 100,
+    "price": "free",
+    "publisher": "Nmap Project",
+    "verified": true,
+    "tags": [
+      "Packet capture",
+      "Driver",
+      "Network"
+    ],
+    "logo": "https://npcap.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "zap",
+    "name": "OWASP ZAP",
+    "category": "network",
+    "desc": "Web application security scanner",
+    "official": "https://www.zaproxy.org/",
+    "size": "240MB",
+    "status": "online",
+    "icon": "⚡",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 150,
+    "price": "free",
+    "publisher": "OWASP",
+    "verified": true,
+    "tags": [
+      "Security",
+      "Web",
+      "Scanner"
+    ],
+    "logo": "https://www.zaproxy.org/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "goby",
+    "name": "Goby",
+    "category": "network",
+    "desc": "Cybersecurity testing framework",
+    "official": "https://gobysec.net/",
+    "size": "145MB",
+    "status": "online",
+    "icon": "🔒",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 200,
+    "price": "freemium",
+    "publisher": "Goby",
+    "verified": true,
+    "tags": [
+      "Security",
+      "Vulnerability",
+      "Scanner"
+    ],
+    "logo": "https://gobysec.net/favicon.ico",
+    "platforms": [
+      "windows",
+      "mac",
+      "linux"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "neatdm",
+    "name": "NeatDM",
+    "category": "network",
+    "desc": "Lightweight download manager",
+    "official": "https://www.neatdownloadmanager.com/",
+    "size": "1MB",
+    "status": "online",
+    "icon": "⬇️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 120,
+    "price": "free",
+    "publisher": "NeatDM",
+    "verified": false,
+    "tags": [
+      "Download",
+      "Manager",
+      "Tool"
+    ],
+    "logo": "https://www.neatdownloadmanager.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "transmission",
+    "name": "Transmission",
+    "category": "network",
+    "desc": "Fast and lightweight BitTorrent client",
+    "official": "https://transmissionbt.com/",
+    "size": "18MB",
+    "status": "online",
+    "icon": "📡",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 110,
+    "price": "free",
+    "publisher": "Transmission Project",
+    "verified": true,
+    "tags": [
+      "BitTorrent",
+      "Download",
+      "Open source"
+    ],
+    "logo": "https://transmissionbt.com/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "xdown",
+    "name": "Xdown",
+    "category": "network",
+    "desc": "Free multi-threaded download tool",
+    "official": "https://xdown.org/",
+    "size": "23MB",
+    "status": "online",
+    "icon": "⬇️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 130,
+    "price": "free",
+    "publisher": "Xdown",
+    "verified": false,
+    "tags": [
+      "Download",
+      "Tool",
+      "Multi-thread"
+    ],
+    "logo": "https://xdown.org/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "tencent-meeting",
+    "name": "腾讯会议",
+    "category": "network",
+    "desc": "Tencent video conferencing software",
+    "official": "https://meeting.tencent.com/",
+    "size": "216MB",
+    "status": "online",
+    "icon": "📹",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 150,
+    "price": "freemium",
+    "publisher": "Tencent",
+    "verified": true,
+    "tags": [
+      "Meeting",
+      "Video",
+      "Collaboration"
+    ],
+    "logo": "https://meeting.tencent.com/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "dingtalk",
+    "name": "钉钉",
+    "category": "network",
+    "desc": "Alibaba enterprise communication platform",
+    "official": "https://www.dingtalk.com/",
+    "size": "600MB",
+    "status": "online",
+    "icon": "💬",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 180,
+    "price": "free",
+    "publisher": "Alibaba",
+    "verified": true,
+    "tags": [
+      "Communication",
+      "Enterprise",
+      "Collaboration"
+    ],
+    "logo": "https://www.dingtalk.com/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "todesk",
+    "name": "ToDesk",
+    "category": "network",
+    "desc": "Remote desktop control software",
+    "official": "https://www.todesk.com/",
+    "size": "108MB",
+    "status": "online",
+    "icon": "🖥️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 160,
+    "price": "freemium",
+    "publisher": "ToDesk",
+    "verified": true,
+    "tags": [
+      "Remote",
+      "Desktop",
+      "Control"
+    ],
+    "logo": "https://www.todesk.com/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "winmtr",
+    "name": "WinMTR",
+    "category": "network",
+    "desc": "Network diagnostic tool combining ping and traceroute",
+    "official": "https://github.com/whitehat101/WinMTR",
+    "size": "2MB",
+    "status": "online",
+    "icon": "📊",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 200,
+    "price": "free",
+    "publisher": "WinMTR",
+    "verified": false,
+    "tags": [
+      "Network",
+      "Diagnostic",
+      "Traceroute"
+    ],
+    "logo": "https://github.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "intel-driver",
+    "name": "Intel Network Adapter Driver",
+    "category": "network",
+    "desc": "Intel Ethernet network adapter drivers",
+    "official": "https://www.intel.com/content/www/us/en/download-center/home.html",
+    "size": "800MB",
+    "status": "online",
+    "icon": "🔌",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 120,
+    "price": "free",
+    "publisher": "Intel",
+    "verified": true,
+    "tags": [
+      "Driver",
+      "Network",
+      "Hardware"
+    ],
+    "logo": "https://www.intel.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "systeminformer",
+    "name": "System Informer",
+    "category": "system",
+    "desc": "Advanced system and process monitoring tool",
+    "official": "https://systeminformer.sourceforge.io/",
+    "size": "23MB",
+    "status": "online",
+    "icon": "📈",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 140,
+    "price": "free",
+    "publisher": "System Informer",
+    "verified": true,
+    "tags": [
+      "System",
+      "Process",
+      "Monitor"
+    ],
+    "logo": "https://systeminformer.sourceforge.io/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "geek",
+    "name": "Geek Uninstaller",
+    "category": "system",
+    "desc": "Lightweight and forceful uninstaller",
+    "official": "https://geekuninstaller.com/",
+    "size": "2MB",
+    "status": "online",
+    "icon": "🗑️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 100,
+    "price": "free",
+    "publisher": "Geek Uninstaller",
+    "verified": true,
+    "tags": [
+      "Uninstall",
+      "Clean",
+      "System"
+    ],
+    "logo": "https://geekuninstaller.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "fileconverter",
+    "name": "FileConverter",
+    "category": "system",
+    "desc": "Context menu file converter for Windows",
+    "official": "https://file-converter.org/",
+    "size": "40MB",
+    "status": "online",
+    "icon": "🔄",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 130,
+    "price": "free",
+    "publisher": "FileConverter",
+    "verified": true,
+    "tags": [
+      "Convert",
+      "Image",
+      "Document"
+    ],
+    "logo": "https://file-converter.org/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "nightmode",
+    "name": "Nightmode",
+    "category": "system",
+    "desc": "Windows night mode toggle tool",
+    "official": "https://github.com/Armin2208/Nightmode",
+    "size": "1MB",
+    "status": "online",
+    "icon": "🌙",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 200,
+    "price": "free",
+    "publisher": "Nightmode",
+    "verified": false,
+    "tags": [
+      "Night mode",
+      "Display",
+      "System"
+    ],
+    "logo": "https://github.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "avast",
+    "name": "Avast Free Antivirus",
+    "category": "system",
+    "desc": "Free antivirus protection for Windows",
+    "official": "https://www.avast.com/free-antivirus-download",
+    "size": "1MB",
+    "status": "online",
+    "icon": "🛡️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 150,
+    "price": "free",
+    "publisher": "Avast",
+    "verified": true,
+    "tags": [
+      "Antivirus",
+      "Security",
+      "Protection"
+    ],
+    "logo": "https://www.avast.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "avira",
+    "name": "Avira Free Security",
+    "category": "system",
+    "desc": "Free antivirus and security suite",
+    "official": "https://www.avira.com/free-antivirus",
+    "size": "7MB",
+    "status": "online",
+    "icon": "🛡️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 140,
+    "price": "free",
+    "publisher": "Avira",
+    "verified": true,
+    "tags": [
+      "Antivirus",
+      "Security",
+      "Protection"
+    ],
+    "logo": "https://www.avira.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "flux",
+    "name": "f.lux",
+    "category": "system",
+    "desc": "Screen color temperature adjuster for eye comfort",
+    "official": "https://justgetflux.com/",
+    "size": "1MB",
+    "status": "online",
+    "icon": "🌅",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 90,
+    "price": "free",
+    "publisher": "f.lux Software",
+    "verified": true,
+    "tags": [
+      "Display",
+      "Eye care",
+      "Night mode"
+    ],
+    "logo": "https://justgetflux.com/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "zoomit",
+    "name": "ZoomIt",
+    "category": "system",
+    "desc": "Screen zoom and annotation utility by Microsoft",
+    "official": "https://docs.microsoft.com/sysinternals/downloads/zoomit",
+    "size": "1MB",
+    "status": "online",
+    "icon": "🔍",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 301,
+    "responseTime": 100,
+    "price": "free",
+    "publisher": "Microsoft",
+    "verified": true,
+    "tags": [
+      "Zoom",
+      "Annotation",
+      "Presentation"
+    ],
+    "logo": "https://learn.microsoft.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "freefilesync",
+    "name": "FreeFileSync",
+    "category": "system",
+    "desc": "Open-source folder comparison and synchronization",
+    "official": "https://freefilesync.org/",
+    "size": "21MB",
+    "status": "online",
+    "icon": "🔄",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 110,
+    "price": "free",
+    "publisher": "FreeFileSync",
+    "verified": true,
+    "tags": [
+      "Sync",
+      "Backup",
+      "File"
+    ],
+    "logo": "https://freefilesync.org/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "rainlendar",
+    "name": "Rainlendar",
+    "category": "system",
+    "desc": "Customizable desktop calendar",
+    "official": "https://www.rainlendar.net/",
+    "size": "44MB",
+    "status": "online",
+    "icon": "📅",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 120,
+    "price": "freemium",
+    "publisher": "Rainy",
+    "verified": true,
+    "tags": [
+      "Calendar",
+      "Desktop",
+      "Widget"
+    ],
+    "logo": "https://www.rainlendar.net/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "lockhunter",
+    "name": "LockHunter",
+    "category": "system",
+    "desc": "Unlock files blocked by other processes",
+    "official": "https://lockhunter.com/",
+    "size": "3MB",
+    "status": "online",
+    "icon": "🔓",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 100,
+    "price": "free",
+    "publisher": "Crystal Rich",
+    "verified": true,
+    "tags": [
+      "Unlock",
+      "File",
+      "System"
+    ],
+    "logo": "https://lockhunter.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "wiztree",
+    "name": "WizTree",
+    "category": "system",
+    "desc": "Fast disk space analyzer",
+    "official": "https://diskanalyzer.com/",
+    "size": "5MB",
+    "status": "online",
+    "icon": "🌳",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 110,
+    "price": "free",
+    "publisher": "Antibody Software",
+    "verified": true,
+    "tags": [
+      "Disk",
+      "Analyzer",
+      "Space"
+    ],
+    "logo": "https://diskanalyzer.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "eraser",
+    "name": "Eraser",
+    "category": "system",
+    "desc": "Secure data removal tool",
+    "official": "https://eraser.heidi.ie/",
+    "size": "9MB",
+    "status": "online",
+    "icon": "🧹",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 130,
+    "price": "free",
+    "publisher": "Heidi.ie",
+    "verified": true,
+    "tags": [
+      "Secure erase",
+      "Privacy",
+      "Disk"
+    ],
+    "logo": "https://eraser.heidi.ie/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "vmware-workstation",
+    "name": "VMware Workstation",
+    "category": "system",
+    "desc": "Desktop virtualization platform",
+    "official": "https://www.vmware.com/products/workstation-pro.html",
+    "size": "267MB",
+    "status": "online",
+    "icon": "💻",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 100,
+    "price": "paid",
+    "publisher": "VMware",
+    "verified": true,
+    "tags": [
+      "Virtualization",
+      "VM",
+      "System"
+    ],
+    "logo": "https://www.vmware.com/favicon.ico",
+    "platforms": [
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "rufus",
+    "name": "Rufus",
+    "category": "system",
+    "desc": "Create bootable USB drives easily",
+    "official": "https://rufus.ie/",
+    "size": "1MB",
+    "status": "online",
+    "icon": "💾",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 90,
+    "price": "free",
+    "publisher": "Rufus",
+    "verified": true,
+    "tags": [
+      "USB",
+      "Bootable",
+      "ISO"
+    ],
+    "logo": "https://rufus.ie/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "virtualbox",
+    "name": "VirtualBox",
+    "category": "system",
+    "desc": "Open-source x86 virtualization platform",
+    "official": "https://www.virtualbox.org/",
+    "size": "107MB",
+    "status": "online",
+    "icon": "💻",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 100,
+    "price": "free",
+    "publisher": "Oracle",
+    "verified": true,
+    "tags": [
+      "Virtualization",
+      "VM",
+      "Open source"
+    ],
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/virtualbox/virtualbox-original.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "listary",
+    "name": "Listary",
+    "category": "system",
+    "desc": "File search and app launcher",
+    "official": "https://www.listary.com/",
+    "size": "13MB",
+    "status": "online",
+    "icon": "🔎",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 120,
+    "price": "freemium",
+    "publisher": "Listary",
+    "verified": true,
+    "tags": [
+      "Search",
+      "Launcher",
+      "Productivity"
+    ],
+    "logo": "https://www.listary.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "glasswire",
+    "name": "GlassWire",
+    "category": "system",
+    "desc": "Network monitoring and firewall tool",
+    "official": "https://www.glasswire.com/",
+    "size": "81MB",
+    "status": "online",
+    "icon": "🔥",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 140,
+    "price": "freemium",
+    "publisher": "GlassWire",
+    "verified": true,
+    "tags": [
+      "Firewall",
+      "Network",
+      "Monitor"
+    ],
+    "logo": "https://www.glasswire.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "zonealarm",
+    "name": "ZoneAlarm",
+    "category": "system",
+    "desc": "Free firewall and antivirus software",
+    "official": "https://www.zonealarm.com/",
+    "size": "1MB",
+    "status": "online",
+    "icon": "🛡️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 150,
+    "price": "free",
+    "publisher": "Check Point",
+    "verified": true,
+    "tags": [
+      "Firewall",
+      "Security",
+      "Antivirus"
+    ],
+    "logo": "https://www.zonealarm.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "patchmypc",
+    "name": "Patch My PC",
+    "category": "system",
+    "desc": "Third-party software updater",
+    "official": "https://patchmypc.com/",
+    "size": "56MB",
+    "status": "online",
+    "icon": "🔄",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 110,
+    "price": "free",
+    "publisher": "Patch My PC",
+    "verified": true,
+    "tags": [
+      "Updater",
+      "Software",
+      "System"
+    ],
+    "logo": "https://patchmypc.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "google-pinyin",
+    "name": "Google Pinyin",
+    "category": "system",
+    "desc": "Chinese input method by Google",
+    "official": "https://www.google.com/intl/zh-CN/ime/pinyin/",
+    "size": "16MB",
+    "status": "online",
+    "icon": "⌨️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 80,
+    "price": "free",
+    "publisher": "Google",
+    "verified": true,
+    "tags": [
+      "IME",
+      "Chinese",
+      "Input"
+    ],
+    "logo": "https://www.google.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "sogou-pinyin",
+    "name": "搜狗拼音输入法",
+    "category": "system",
+    "desc": "Popular Chinese input method",
+    "official": "https://pinyin.sogou.com/",
+    "size": "162MB",
+    "status": "online",
+    "icon": "⌨️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 100,
+    "price": "free",
+    "publisher": "Sogou",
+    "verified": true,
+    "tags": [
+      "IME",
+      "Chinese",
+      "Input"
+    ],
+    "logo": "https://pinyin.sogou.com/favicon.ico",
+    "platforms": [
+      "windows",
+      "mac"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "pointerfocus",
+    "name": "PointerFocus",
+    "category": "system",
+    "desc": "Mouse pointer highlight and spotlight tool",
+    "official": "https://www.pointerfocus.com/",
+    "size": "1MB",
+    "status": "online",
+    "icon": "🖱️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 130,
+    "price": "paid",
+    "publisher": "PointerFocus",
+    "verified": true,
+    "tags": [
+      "Mouse",
+      "Highlight",
+      "Presentation"
+    ],
+    "logo": "https://www.pointerfocus.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "spotonthemouse",
+    "name": "SpotOnTheMouse",
+    "category": "system",
+    "desc": "Mouse pointer visualizer for presentations",
+    "official": "https://www.aurelify.com/spotonthemouse/",
+    "size": "1MB",
+    "status": "online",
+    "icon": "🖱️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 140,
+    "price": "paid",
+    "publisher": "Aurelify",
+    "verified": false,
+    "tags": [
+      "Mouse",
+      "Highlight",
+      "Presentation"
+    ],
+    "logo": "https://www.aurelify.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "swordsoft-mousetrack",
+    "name": "SwordSoft Mousetrack",
+    "category": "system",
+    "desc": "Mouse movement recording and visualization",
+    "official": "https://www.swordsoft.idv.tw/",
+    "size": "11MB",
+    "status": "online",
+    "icon": "🖱️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 150,
+    "price": "paid",
+    "publisher": "SwordSoft",
+    "verified": false,
+    "tags": [
+      "Mouse",
+      "Track",
+      "Presentation"
+    ],
+    "logo": "https://www.swordsoft.idv.tw/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "laomaotao",
+    "name": "LaoMaoTao",
+    "category": "system",
+    "desc": "PE system maintenance tool for USB boot",
+    "official": "https://www.laomaotao.net/",
+    "size": "1.5GB",
+    "status": "online",
+    "icon": "🔧",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 200,
+    "price": "free",
+    "publisher": "LaoMaoTao",
+    "verified": false,
+    "tags": [
+      "PE",
+      "Boot",
+      "System repair"
+    ],
+    "logo": "https://www.laomaotao.net/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "captura",
+    "name": "Captura",
+    "category": "media",
+    "desc": "Free screen recorder with minimal UI",
+    "official": "https://github.com/MathewSachin/Captura",
+    "size": "4MB",
+    "status": "online",
+    "icon": "🎥",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 200,
+    "price": "free",
+    "publisher": "Mathew Sachin",
+    "verified": false,
+    "tags": [
+      "Screen recording",
+      "Video",
+      "Open source"
+    ],
+    "logo": "https://github.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "pear-rec",
+    "name": "Pear Rec",
+    "category": "media",
+    "desc": "Cross-platform screen recorder",
+    "official": "https://github.com/027xiguapi/pear-rec",
+    "size": "85MB",
+    "status": "online",
+    "icon": "🎥",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 200,
+    "price": "free",
+    "publisher": "Pear Rec",
+    "verified": false,
+    "tags": [
+      "Screen recording",
+      "Video",
+      "Open source"
+    ],
+    "logo": "https://github.com/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "potplayer",
+    "name": "PotPlayer",
+    "category": "media",
+    "desc": "Powerful multimedia player by Kakao",
+    "official": "https://potplayer.daum.net/",
+    "size": "37MB",
+    "status": "online",
+    "icon": "🎬",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 120,
+    "price": "free",
+    "publisher": "Kakao",
+    "verified": true,
+    "tags": [
+      "Player",
+      "Video",
+      "Multimedia"
+    ],
+    "logo": "https://potplayer.daum.net/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "umi-ocr",
+    "name": "Umi OCR",
+    "category": "media",
+    "desc": "Offline OCR text recognition tool",
+    "official": "https://github.com/hiroi-sora/Umi-OCR",
+    "size": "100MB",
+    "status": "online",
+    "icon": "🔍",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 200,
+    "price": "free",
+    "publisher": "Umi OCR",
+    "verified": false,
+    "tags": [
+      "OCR",
+      "Text recognition",
+      "Chinese"
+    ],
+    "logo": "https://github.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "annotator",
+    "name": "Epic Pen / Annotator",
+    "category": "media",
+    "desc": "Screen annotation and drawing tool",
+    "official": "https://epicpen.com/",
+    "size": "69MB",
+    "status": "online",
+    "icon": "✏️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 140,
+    "price": "freemium",
+    "publisher": "Tank Studios",
+    "verified": true,
+    "tags": [
+      "Annotation",
+      "Drawing",
+      "Presentation"
+    ],
+    "logo": "https://epicpen.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "ppink",
+    "name": "ppInk",
+    "category": "media",
+    "desc": "Open-source screen annotation tool",
+    "official": "https://github.com/pubpub-zz/ppInk",
+    "size": "6MB",
+    "status": "online",
+    "icon": "🖊️",
+    "lastChecked": "2026-05-14T05:02:01.658Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 200,
+    "price": "free",
+    "publisher": "ppInk",
+    "verified": false,
+    "tags": [
+      "Annotation",
+      "Drawing",
+      "Open source"
+    ],
+    "logo": "https://github.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "msys2",
+    "name": "MSYS2",
+    "category": "dev",
+    "desc": "Windows software distribution and building platform",
+    "official": "https://www.msys2.org/",
+    "size": "100MB",
+    "status": "online",
+    "icon": "🪟",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 100,
+    "price": "free",
+    "publisher": "MSYS2",
+    "verified": true,
+    "tags": [
+      "Build",
+      "Unix",
+      "Package manager"
+    ],
+    "logo": "https://www.msys2.org/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "windirstat",
+    "name": "WinDirStat",
+    "category": "system",
+    "desc": "Disk usage statistics viewer and cleanup tool",
+    "official": "https://windirstat.net/",
+    "size": "1MB",
+    "status": "online",
+    "icon": "📊",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 90,
+    "price": "free",
+    "publisher": "WinDirStat",
+    "verified": true,
+    "tags": [
+      "Disk",
+      "Analyzer",
+      "Space"
+    ],
+    "logo": "https://windirstat.net/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "dbeaver",
+    "name": "DBeaver",
+    "category": "dev",
+    "desc": "Universal database management tool",
+    "official": "https://dbeaver.io/",
+    "size": "100MB",
+    "status": "online",
+    "icon": "🐬",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 120,
+    "price": "free",
+    "publisher": "DBeaver Corp",
+    "verified": true,
+    "tags": [
+      "Database",
+      "SQL",
+      "IDE"
+    ],
+    "logo": "https://dbeaver.io/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "squoosh",
+    "name": "Squoosh",
+    "category": "media",
+    "desc": "Image compression web app by Google Chrome Labs",
+    "official": "https://squoosh.app/",
+    "size": "5MB",
+    "status": "online",
+    "icon": "🖼️",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 80,
+    "price": "free",
+    "publisher": "Google Chrome Labs",
+    "verified": true,
+    "tags": [
+      "Image",
+      "Compression",
+      "Web"
+    ],
+    "logo": "https://squoosh.app/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "usbpcap",
+    "name": "USBPcap",
+    "category": "system",
+    "desc": "USB packet capture tool for Windows",
+    "official": "https://usbpcap.sourceforge.io/",
+    "size": "1MB",
+    "status": "online",
+    "icon": "🔌",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 110,
+    "price": "free",
+    "publisher": "USBPcap",
+    "verified": true,
+    "tags": [
+      "USB",
+      "Packet capture",
+      "Network"
+    ],
+    "logo": "https://usbpcap.sourceforge.io/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "opera-gx",
+    "name": "Opera GX",
+    "category": "network",
+    "desc": "Gaming-focused web browser",
+    "official": "https://www.opera.com/gx",
+    "size": "150MB",
+    "status": "online",
+    "icon": "🎮",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 100,
+    "price": "free",
+    "publisher": "Opera Software",
+    "verified": true,
+    "tags": [
+      "Browser",
+      "Gaming",
+      "Web"
+    ],
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opera/opera-original.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "tabby",
+    "name": "Tabby",
+    "category": "dev",
+    "desc": "Modern terminal emulator with SSH client",
+    "official": "https://tabby.sh/",
+    "size": "80MB",
+    "status": "online",
+    "icon": "💻",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 130,
+    "price": "free",
+    "publisher": "Tabby",
+    "verified": true,
+    "tags": [
+      "Terminal",
+      "SSH",
+      "Command line"
+    ],
+    "logo": "https://tabby.sh/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "wechat",
+    "name": "微信",
+    "category": "network",
+    "desc": "Tencent instant messaging and social app",
+    "official": "https://weixin.qq.com/",
+    "size": "200MB",
+    "status": "online",
+    "icon": "💬",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 150,
+    "price": "free",
+    "publisher": "Tencent",
+    "verified": true,
+    "tags": [
+      "Messaging",
+      "Social",
+      "Communication"
+    ],
+    "logo": "https://weixin.qq.com/favicon.ico",
+    "platforms": [
+      "mac",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "rime",
+    "name": "小狼毫输入法",
+    "category": "system",
+    "desc": "Rime input method engine for Windows",
+    "official": "https://rime.im/",
+    "size": "15MB",
+    "status": "online",
+    "icon": "⌨️",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 100,
+    "price": "free",
+    "publisher": "Rime",
+    "verified": true,
+    "tags": [
+      "IME",
+      "Chinese",
+      "Input"
+    ],
+    "logo": "https://rime.im/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "bandizip",
+    "name": "Bandizip",
+    "category": "system",
+    "desc": "Fast and lightweight archive utility",
+    "official": "https://www.bandisoft.com/bandizip/",
+    "size": "8MB",
+    "status": "online",
+    "icon": "📦",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 110,
+    "price": "free",
+    "publisher": "Bandisoft",
+    "verified": true,
+    "tags": [
+      "Archive",
+      "Compression",
+      "Zip"
+    ],
+    "logo": "https://www.bandisoft.com/favicon.ico",
+    "platforms": [
+      "mac",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "powertoys",
+    "name": "PowerToys",
+    "category": "system",
+    "desc": "Microsoft productivity utilities for power users",
+    "official": "https://github.com/microsoft/PowerToys",
+    "size": "250MB",
+    "status": "online",
+    "icon": "⚡",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 100,
+    "price": "free",
+    "publisher": "Microsoft",
+    "verified": true,
+    "tags": [
+      "Productivity",
+      "Utilities",
+      "System"
+    ],
+    "logo": "https://github.com/favicon.ico",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "curl",
+    "name": "cURL",
+    "category": "dev",
+    "desc": "Command-line tool for transferring data with URLs",
+    "official": "https://curl.se/",
+    "size": "5MB",
+    "status": "online",
+    "icon": "🌐",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 80,
+    "price": "free",
+    "publisher": "cURL Project",
+    "verified": true,
+    "tags": [
+      "HTTP",
+      "Command line",
+      "Network"
+    ],
+    "logo": "https://curl.se/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "jq",
+    "name": "jq",
+    "category": "dev",
+    "desc": "Lightweight command-line JSON processor",
+    "official": "https://jqlang.github.io/jq/",
+    "size": "1MB",
+    "status": "online",
+    "icon": "📋",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 90,
+    "price": "free",
+    "publisher": "jq",
+    "verified": true,
+    "tags": [
+      "JSON",
+      "Command line",
+      "Parser"
+    ],
+    "logo": "https://jqlang.github.io/jq/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "github-cli",
+    "name": "GitHub CLI",
+    "category": "dev",
+    "desc": "Command-line interface for GitHub",
+    "official": "https://cli.github.com/",
+    "size": "15MB",
+    "status": "online",
+    "icon": "⌨️",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 90,
+    "price": "free",
+    "publisher": "GitHub",
+    "verified": true,
+    "tags": [
+      "GitHub",
+      "Command line",
+      "Git"
+    ],
+    "logo": "https://github.com/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "visual-studio",
+    "name": "Visual Studio",
+    "category": "dev",
+    "desc": "Microsoft integrated development environment",
+    "official": "https://visualstudio.microsoft.com/",
+    "size": "2GB",
+    "status": "online",
+    "icon": "💻",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 100,
+    "price": "freemium",
+    "publisher": "Microsoft",
+    "verified": true,
+    "tags": [
+      "IDE",
+      "Development",
+      "Microsoft"
+    ],
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-plain.svg",
+    "platforms": [
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "another-redis-desktop-manager",
+    "name": "Another Redis Desktop Manager",
+    "category": "dev",
+    "desc": "Cross-platform Redis GUI client",
+    "official": "https://github.com/qishibo/AnotherRedisDesktopManager",
+    "size": "80MB",
+    "status": "online",
+    "icon": "🔴",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 200,
+    "price": "free",
+    "publisher": "qishibo",
+    "verified": false,
+    "tags": [
+      "Redis",
+      "Database",
+      "GUI"
+    ],
+    "logo": "https://github.com/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "httpie",
+    "name": "HTTPie",
+    "category": "dev",
+    "desc": "User-friendly command-line HTTP client",
+    "official": "https://httpie.io/",
+    "size": "20MB",
+    "status": "online",
+    "icon": "🌐",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 100,
+    "price": "free",
+    "publisher": "HTTPie",
+    "verified": true,
+    "tags": [
+      "HTTP",
+      "API",
+      "Command line"
+    ],
+    "logo": "https://httpie.io/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "snipaste",
+    "name": "Snipaste",
+    "category": "system",
+    "desc": "Efficient screenshot and paste tool",
+    "official": "https://www.snipaste.com/",
+    "size": "20MB",
+    "status": "online",
+    "icon": "✂️",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 120,
+    "price": "free",
+    "publisher": "Snipaste",
+    "verified": true,
+    "tags": [
+      "Screenshot",
+      "Paste",
+      "Productivity"
+    ],
+    "logo": "https://www.snipaste.com/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86"
+    ]
+  },
+  {
+    "id": "microsoft-edge",
+    "name": "Microsoft Edge",
+    "category": "network",
+    "desc": "Microsoft web browser based on Chromium",
+    "official": "https://www.microsoft.com/edge",
+    "size": "150MB",
+    "status": "online",
+    "icon": "🌊",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 90,
+    "price": "free",
+    "publisher": "Microsoft",
+    "verified": true,
+    "tags": [
+      "Browser",
+      "Chromium",
+      "Web"
+    ],
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "rust-lang",
+    "name": "Rust",
+    "category": "dev",
+    "desc": "Systems programming language with memory safety",
+    "official": "https://www.rust-lang.org/",
+    "size": "10MB",
+    "status": "online",
+    "icon": "⚙️",
+    "lastChecked": "2026-05-14T06:15:42.120Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 80,
+    "price": "free",
+    "publisher": "Rust Foundation",
+    "verified": true,
+    "tags": [
+      "Programming language",
+      "Systems",
+      "Memory safety"
+    ],
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
+    ]
+  },
+  {
+    "id": "kimi",
+    "name": "Kimi",
+    "category": "office",
+    "desc": "AI assistant desktop client by Moonshot AI",
+    "official": "https://kimi.moonshot.cn/",
+    "size": "150MB",
+    "status": "online",
+    "icon": "🤖",
+    "lastChecked": "2026-05-14T06:16:37.627Z",
+    "healthStatus": "online",
+    "httpStatus": 200,
+    "responseTime": 100,
+    "price": "free",
+    "publisher": "Moonshot AI",
+    "verified": true,
+    "tags": [
+      "AI",
+      "Assistant",
+      "Productivity"
+    ],
+    "logo": "https://kimi.moonshot.cn/favicon.ico",
+    "platforms": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "architectures": [
+      "x86",
+      "arm64"
     ]
   }
 ]

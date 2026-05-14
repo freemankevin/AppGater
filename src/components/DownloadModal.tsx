@@ -43,7 +43,8 @@ export default function DownloadModal({
               alt={tool.name}
               width={40}
               height={40}
-              className="rounded-lg bg-[#1e1e1e] object-contain"
+              className="rounded-lg object-contain"
+              style={{ imageRendering: 'pixelated' }}
             />
             <div>
               <h3 className="font-medium text-[15px] text-ink">{tool.name}</h3>
@@ -63,7 +64,7 @@ export default function DownloadModal({
           const displayTags = getDisplayTags(tool);
           return displayTags.length > 0 ? (
             <div className="mb-4">
-              <p className="text-[11px] text-ink-faint mb-1.5">标签</p>
+              <p className="text-[11px] text-ink-faint mb-1.5">Tags</p>
               <div className="flex flex-wrap gap-1.5">
                 {displayTags.map((tag) => (
                   <span
@@ -80,7 +81,7 @@ export default function DownloadModal({
 
         {/* Platforms */}
         <div className="mb-4">
-          <p className="text-[11px] text-ink-faint mb-1.5">支持平台</p>
+          <p className="text-[11px] text-ink-faint mb-1.5">Platforms</p>
           <div className="flex flex-wrap gap-1.5">
             {tool.platforms.map((p) => (
               <span key={p} className="text-[12px] px-2 py-1 rounded-md bg-[var(--glass-bg)] border border-[var(--glass-border)] text-ink-muted">
@@ -92,7 +93,7 @@ export default function DownloadModal({
 
         {/* Architectures */}
         <div className="mb-4">
-          <p className="text-[11px] text-ink-faint mb-1.5">CPU 架构</p>
+          <p className="text-[11px] text-ink-faint mb-1.5">Architectures</p>
           <div className="flex flex-wrap gap-1.5">
             {tool.architectures.map((a) => (
               <span key={a} className="text-[12px] px-2 py-1 rounded-md bg-[var(--glass-bg)] border border-[var(--glass-border)] text-ink-muted">
@@ -105,11 +106,11 @@ export default function DownloadModal({
         {/* Stats */}
         <div className="space-y-2.5 mb-6">
           {[
-            { label: '授权方式', value: PRICE_LABELS[tool.price] },
-            { label: '文件大小', value: tool.size },
-            { label: '来源验证', value: (
+            { label: 'License', value: PRICE_LABELS[tool.price] },
+            { label: 'Size', value: tool.size },
+            { label: 'Source', value: (
               <span className={isSafe ? 'text-emerald-500' : 'text-amber-500'}>
-                {isSafe ? '官方已验证' : '请自行确认'}
+                {isSafe ? 'Verified' : 'Unverified'}
               </span>
             )},
           ].map((item) => (
@@ -129,7 +130,7 @@ export default function DownloadModal({
           className="w-full flex items-center justify-center gap-1.5 py-2.5 bg-ink text-surface rounded-lg text-[13px] font-medium hover:bg-ink-muted transition-colors"
         >
           <Download className="w-4 h-4" />
-          立即下载
+          Download
         </button>
       </div>
     </div>

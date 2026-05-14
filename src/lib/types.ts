@@ -25,22 +25,21 @@ export type ToolCategory = 'all' | 'dev' | 'office' | 'system' | 'network' | 'me
 export interface CategoryInfo {
   id: ToolCategory;
   name: string;
-  nameEn: string;
 }
 
 export const CATEGORIES: CategoryInfo[] = [
-  { id: 'all', name: '全部', nameEn: 'All' },
-  { id: 'dev', name: '开发环境', nameEn: 'Development' },
-  { id: 'office', name: '办公效率', nameEn: 'Office' },
-  { id: 'system', name: '系统工具', nameEn: 'System' },
-  { id: 'network', name: '网络工具', nameEn: 'Network' },
-  { id: 'media', name: '媒体处理', nameEn: 'Media' },
+  { id: 'all', name: 'All' },
+  { id: 'dev', name: 'Development' },
+  { id: 'office', name: 'Office' },
+  { id: 'system', name: 'System' },
+  { id: 'network', name: 'Network' },
+  { id: 'media', name: 'Media' },
 ];
 
 export const PRICE_LABELS: Record<string, string> = {
-  free: '免费',
-  paid: '付费',
-  freemium: '部分免费',
+  free: 'Free',
+  paid: 'Paid',
+  freemium: 'Freemium',
 };
 
 export const PLATFORM_LABELS: Record<string, string> = {
@@ -51,5 +50,5 @@ export const PLATFORM_LABELS: Record<string, string> = {
 
 export const ARCH_LABELS: Record<string, string> = {
   x86: 'x86',
-  arm64: 'ARM64',
+  arm64: 'arm64',
 };

@@ -32,6 +32,13 @@ export function isSafeOfficialUrl(url: string): boolean {
       'screentogif.com',
       'colorpicker.fr',
       'docs.microsoft.com',
+      'onlyoffice.com',
+      'sumatrapdfreader.org',
+      'pdfgear.com',
+      'mypublicwifi.com',
+      'podman.io',
+      'ruby-lang.org',
+      'facepunch.com',
     ];
     return safeDomains.some(domain => {
       const host = parsed.hostname.toLowerCase();
@@ -47,25 +54,25 @@ export function getStatusStyles(status: string) {
     case 'online':
       return {
         dot: 'bg-status-online',
-        text: '官方在线',
+        text: 'Online',
         border: 'border-status-online/30',
       };
     case 'slow':
       return {
         dot: 'bg-status-slow',
-        text: '响应缓慢',
+        text: 'Slow',
         border: 'border-status-slow/30',
       };
     case 'offline':
       return {
         dot: 'bg-status-offline',
-        text: '链接异常',
+        text: 'Offline',
         border: 'border-status-offline/30',
       };
     default:
       return {
         dot: 'bg-ink-faint',
-        text: '状态未知',
+        text: 'Unknown',
         border: 'border-ink-faint/30',
       };
   }

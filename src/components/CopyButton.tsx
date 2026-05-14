@@ -8,7 +8,7 @@ interface CopyButtonProps {
   title?: string;
 }
 
-export default function CopyButton({ text, title = '复制' }: CopyButtonProps) {
+export default function CopyButton({ text, title = 'Copy' }: CopyButtonProps) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
@@ -25,7 +25,7 @@ export default function CopyButton({ text, title = '复制' }: CopyButtonProps) 
     <button
       onClick={handleCopy}
       className="p-2 rounded-lg bg-[var(--glass-bg)] border border-[var(--glass-border)] text-ink-muted hover:text-ink hover:bg-[var(--glass-hover-bg)] hover:border-[var(--glass-hover-border)] transition-colors"
-      title={copied ? '已复制' : title}
+      title={copied ? 'Copied' : title}
     >
       {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
     </button>

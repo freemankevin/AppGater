@@ -17,7 +17,7 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    // 查找工具
+    // Find tool
     const tools = toolsData as Tool[];
     const tool = tools.find((t) => t.id === toolId);
 
@@ -28,7 +28,7 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    // 检查工具状态
+    // Check tool status
     if (tool.healthStatus === 'offline') {
       return NextResponse.json(
         { error: 'Tool is currently unavailable' },
@@ -53,7 +53,7 @@ export async function GET(request: NextRequest) {
   }
 }
 
-// 支持 HEAD 请求用于预检
+// Support HEAD request for health check
 export async function HEAD(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);

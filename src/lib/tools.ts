@@ -36,20 +36,19 @@ export function getCategories() {
 
 export function getCategoryName(categoryId: ToolCategory): string {
   const category = CATEGORIES.find(c => c.id === categoryId);
-  return category?.name || '全部';
+  return category?.name || 'All';
 }
 
 export function getLogoPath(tool: Tool): string {
-  return tool.logo || `/logo/${tool.id}.svg`;
+  return tool.logo || '';
 }
 
 const PUBLISHER_ALIASES: Record<string, string[]> = {
-  microsoft: ['微软'],
-  google: ['谷歌'],
+  microsoft: ['microsoft'],
+  google: ['google'],
   adobe: ['adobe'],
   docker: ['docker'],
-  oracle: ['oracle'],
-  openjdk: ['openjdk'],
+  adoptium: ['adoptium', 'temurin'],
 };
 
 export function getDisplayTags(tool: Tool): string[] {
@@ -61,20 +60,20 @@ export function getDisplayTags(tool: Tool): string[] {
   return tool.tags.filter((tag) => {
     const t = tag.toLowerCase();
 
-    // 完全匹配
+    // exact match
     if (t === p) return false;
 
-    // 互相包含
+    // mutual inclusion
     if (p.includes(t) || t.includes(p)) return false;
 
-    // 分段匹配
+    // partial match
     for (const part of publisherParts) {
       if (part.length > 1 && (part === t || t.includes(part) || part.includes(t))) {
         return false;
       }
     }
 
-    // 别名匹配
+    // alias match
     for (const [key, aliases] of Object.entries(PUBLISHER_ALIASES)) {
       if (p.includes(key) || publisherParts.some((part) => part === key)) {
         if (aliases.includes(t)) return false;
