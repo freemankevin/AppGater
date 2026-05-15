@@ -39,8 +39,10 @@ export function getCategoryName(categoryId: ToolCategory): string {
   return category?.name || 'All';
 }
 
-export function getLogoPath(tool: Tool): string {
-  return tool.logo || '';
+import { getLogoUrl } from './logo-map';
+
+export function getLogoPath(tool: Tool, isDark = false): string {
+  return getLogoUrl(tool.id, isDark) || tool.logo || '';
 }
 
 const PUBLISHER_ALIASES: Record<string, string[]> = {

@@ -1,0 +1,879 @@
+{
+  "ok": [
+    {
+      "id": "vscode",
+      "name": "VSCode",
+      "logo": "https://code.visualstudio.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "podman",
+      "name": "Podman",
+      "logo": "https://podman.io/logos/optimized/podman-3-logo-266w-253h.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "ok": true
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "logo": "https://nodejs.org/favicon.ico",
+      "status": 307,
+      "contentType": "text/plain",
+      "ok": true
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "logo": "https://www.python.org/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "logo": "https://git-scm.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "logo": "https://www.ruby-lang.org/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "logo": "https://rust.facepunch.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "java",
+      "name": "Java JDK",
+      "logo": "https://adoptium.net/images/adoptium-logo-dark.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "ok": true
+    },
+    {
+      "id": "pycharm",
+      "name": "PyCharm",
+      "logo": "https://www.jetbrains.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "sublime",
+      "name": "Sublime Text",
+      "logo": "https://www.sublimetext.com/images/logo.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "ok": true
+    },
+    {
+      "id": "sumatrapdf",
+      "name": "Sumatra PDF",
+      "logo": "https://www.sumatrapdfreader.org/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "pdfgear",
+      "name": "PDFgear",
+      "logo": "https://www.pdfgear.com/img/icon.png",
+      "status": 200,
+      "contentType": "image/png",
+      "ok": true
+    },
+    {
+      "id": "mypublicwifi",
+      "name": "MyPublicWiFi",
+      "logo": "https://mypublicwifi.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "wget",
+      "name": "Wget",
+      "logo": "https://eternallybored.org/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "packet",
+      "name": "Network Packet Capture",
+      "logo": "https://www.wireshark.org/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "disk",
+      "name": "Disk Check",
+      "logo": "https://crystalmark.info/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "port",
+      "name": "Port Manager",
+      "logo": "https://learn.microsoft.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "qgis",
+      "name": "QGIS",
+      "logo": "https://qgis.org/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "screen",
+      "name": "Screen Recorder",
+      "logo": "https://obsproject.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "gif",
+      "name": "GIF Recorder",
+      "logo": "https://nickemanarin.github.io/ScreenToGif-Website/logos/ms-icon-144x144.png",
+      "status": 301,
+      "contentType": "text/html",
+      "ok": true
+    },
+    {
+      "id": "color",
+      "name": "Color Picker",
+      "logo": "https://colorpicker.fr/favicon.ico",
+      "status": 302,
+      "contentType": "text/html; charset=iso-8859-1",
+      "ok": true
+    },
+    {
+      "id": "podman-desktop",
+      "name": "Podman Desktop",
+      "logo": "https://podman.io/logos/optimized/podman-3-logo-266w-253h.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "ok": true
+    },
+    {
+      "id": "tortoisegit",
+      "name": "TortoiseGit",
+      "logo": "https://tortoisegit.org/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "hugo",
+      "name": "Hugo",
+      "logo": "https://gohugo.io/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "excalidraw",
+      "name": "Excalidraw",
+      "logo": "https://excalidraw.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "wps",
+      "name": "WPS Office",
+      "logo": "https://www.wps.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "microsoft-office",
+      "name": "Microsoft Office",
+      "logo": "https://www.microsoft.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "office-deployment-tool",
+      "name": "Office Deployment Tool",
+      "logo": "https://www.microsoft.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "baidu-translate",
+      "name": "百度翻译",
+      "logo": "https://fanyi.baidu.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "diffinity",
+      "name": "Diffinity",
+      "logo": "https://truehumandesign.se/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "winscp",
+      "name": "WinSCP",
+      "logo": "https://winscp.net/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "firefox",
+      "name": "Mozilla Firefox",
+      "logo": "https://www.mozilla.org/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "advanced-ip-scanner",
+      "name": "Advanced IP Scanner",
+      "logo": "https://www.advanced-ip-scanner.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "nmap",
+      "name": "Nmap",
+      "logo": "https://nmap.org/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "npcap",
+      "name": "Npcap",
+      "logo": "https://npcap.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "goby",
+      "name": "Goby",
+      "logo": "https://gobysec.net/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "xdown",
+      "name": "Xdown",
+      "logo": "https://xdown.org/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "tencent-meeting",
+      "name": "腾讯会议",
+      "logo": "https://meeting.tencent.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "dingtalk",
+      "name": "钉钉",
+      "logo": "https://www.dingtalk.com/favicon.ico",
+      "status": 302,
+      "contentType": "text/html; charset=utf-8",
+      "ok": true
+    },
+    {
+      "id": "todesk",
+      "name": "ToDesk",
+      "logo": "https://www.todesk.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "systeminformer",
+      "name": "System Informer",
+      "logo": "https://systeminformer.sourceforge.io/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "geek",
+      "name": "Geek Uninstaller",
+      "logo": "https://geekuninstaller.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "fileconverter",
+      "name": "FileConverter",
+      "logo": "https://file-converter.org/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "nightmode",
+      "name": "Nightmode",
+      "logo": "https://github.com/Armin2208.png",
+      "status": 302,
+      "contentType": "text/html; charset=utf-8",
+      "ok": true
+    },
+    {
+      "id": "avast",
+      "name": "Avast Free Antivirus",
+      "logo": "https://www.avast.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "avira",
+      "name": "Avira Free Security",
+      "logo": "https://www.avira.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "flux",
+      "name": "f.lux",
+      "logo": "https://justgetflux.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "zoomit",
+      "name": "ZoomIt",
+      "logo": "https://learn.microsoft.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "freefilesync",
+      "name": "FreeFileSync",
+      "logo": "https://freefilesync.org/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "rainlendar",
+      "name": "Rainlendar",
+      "logo": "https://www.rainlendar.net/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "lockhunter",
+      "name": "LockHunter",
+      "logo": "https://lockhunter.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "wiztree",
+      "name": "WizTree",
+      "logo": "https://diskanalyzer.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "rufus",
+      "name": "Rufus",
+      "logo": "https://rufus.ie/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "virtualbox",
+      "name": "VirtualBox",
+      "logo": "https://www.virtualbox.org/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "listary",
+      "name": "Listary",
+      "logo": "https://www.listary.com/favicon.ico",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true
+    },
+    {
+      "id": "glasswire",
+      "name": "GlassWire",
+      "logo": "https://www.glasswire.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "patchmypc",
+      "name": "Patch My PC",
+      "logo": "https://patchmypc.com/favicon.ico",
+      "status": 302,
+      "contentType": "text/html; charset=UTF-8",
+      "ok": true
+    },
+    {
+      "id": "sogou-pinyin",
+      "name": "搜狗拼音输入法",
+      "logo": "https://pinyin.sogou.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "pointerfocus",
+      "name": "PointerFocus",
+      "logo": "https://www.pointerfocus.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "laomaotao",
+      "name": "LaoMaoTao",
+      "logo": "https://www.laomaotao.net/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "captura",
+      "name": "Captura",
+      "logo": "https://github.com/MathewSachin.png",
+      "status": 302,
+      "contentType": "text/html; charset=utf-8",
+      "ok": true
+    },
+    {
+      "id": "umi-ocr",
+      "name": "Umi OCR",
+      "logo": "https://github.com/hiroi-sora.png",
+      "status": 302,
+      "contentType": "text/html; charset=utf-8",
+      "ok": true
+    },
+    {
+      "id": "annotator",
+      "name": "Epic Pen / Annotator",
+      "logo": "https://epicpen.com/favicon.ico",
+      "status": 307,
+      "contentType": "",
+      "ok": true
+    },
+    {
+      "id": "ppink",
+      "name": "ppInk",
+      "logo": "https://github.com/pubpub-zz.png",
+      "status": 302,
+      "contentType": "text/html; charset=utf-8",
+      "ok": true
+    },
+    {
+      "id": "msys2",
+      "name": "MSYS2",
+      "logo": "https://www.msys2.org/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "windirstat",
+      "name": "WinDirStat",
+      "logo": "https://windirstat.net/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "dbeaver",
+      "name": "DBeaver",
+      "logo": "https://dbeaver.io/favicon.ico",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "ok": true
+    },
+    {
+      "id": "tabby",
+      "name": "Tabby",
+      "logo": "https://tabby.sh/favicon.ico",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "ok": true
+    },
+    {
+      "id": "bandizip",
+      "name": "Bandizip",
+      "logo": "https://www.bandisoft.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "curl",
+      "name": "cURL",
+      "logo": "https://curl.se/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "visual-studio",
+      "name": "Visual Studio",
+      "logo": "https://visualstudio.microsoft.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "another-redis-desktop-manager",
+      "name": "Another Redis Desktop Manager",
+      "logo": "https://github.com/qishibo.png",
+      "status": 302,
+      "contentType": "text/html; charset=utf-8",
+      "ok": true
+    },
+    {
+      "id": "snipaste",
+      "name": "Snipaste",
+      "logo": "https://www.snipaste.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "ok": true
+    },
+    {
+      "id": "microsoft-edge",
+      "name": "Microsoft Edge",
+      "logo": "https://www.microsoft.com/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon",
+      "ok": true
+    },
+    {
+      "id": "rust-lang",
+      "name": "Rust",
+      "logo": "https://www.rust-lang.org/favicon.ico",
+      "status": 301,
+      "contentType": "text/html",
+      "ok": true
+    },
+    {
+      "id": "kimi",
+      "name": "Kimi",
+      "logo": "https://kimi.moonshot.cn/favicon.ico",
+      "status": 302,
+      "contentType": "text/plain; charset=utf-8",
+      "ok": true
+    }
+  ],
+  "failed": [
+    {
+      "id": "go",
+      "name": "Go",
+      "logo": "https://go.dev/favicon.ico",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "Client network socket disconnected before secure TLS connection was established"
+    },
+    {
+      "id": "office",
+      "name": "ONLYOFFICE",
+      "logo": "https://www.onlyoffice.com/favicon.ico",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "ok": false
+    },
+    {
+      "id": "typora",
+      "name": "Typora",
+      "logo": "https://typora.io/img/icon_256x256.png",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "timeout"
+    },
+    {
+      "id": "ftp",
+      "name": "FileZilla",
+      "logo": "https://filezilla-project.org/favicon.ico",
+      "status": 403,
+      "contentType": "text/html; charset=iso-8859-1",
+      "ok": false
+    },
+    {
+      "id": "ocr",
+      "name": "OCR Tool",
+      "logo": "https://github.com/tesseract-ocr.png",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "timeout"
+    },
+    {
+      "id": "video",
+      "name": "Video Player",
+      "logo": "https://www.videolan.org/favicon.ico",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "read ECONNRESET"
+    },
+    {
+      "id": "tablego",
+      "name": "TableGo",
+      "logo": "https://github.com/Hzwei087.png",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "timeout"
+    },
+    {
+      "id": "chromedriver",
+      "name": "ChromeDriver",
+      "logo": "https://chromedriver.chromium.org/favicon.ico",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "timeout"
+    },
+    {
+      "id": "chrome",
+      "name": "Google Chrome",
+      "logo": "https://www.google.com/favicon.ico",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "timeout"
+    },
+    {
+      "id": "zap",
+      "name": "OWASP ZAP",
+      "logo": "https://www.zaproxy.org/favicon.ico",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "ok": false
+    },
+    {
+      "id": "neatdm",
+      "name": "NeatDM",
+      "logo": "https://www.neatdownloadmanager.com/favicon.ico",
+      "status": 404,
+      "contentType": "text/html",
+      "ok": false
+    },
+    {
+      "id": "transmission",
+      "name": "Transmission",
+      "logo": "https://transmissionbt.com/favicon.ico",
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "ok": false
+    },
+    {
+      "id": "winmtr",
+      "name": "WinMTR",
+      "logo": "https://github.com/whitehat101.png",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "timeout"
+    },
+    {
+      "id": "intel-driver",
+      "name": "Intel Network Adapter Driver",
+      "logo": "https://www.intel.com/favicon.ico",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "timeout"
+    },
+    {
+      "id": "eraser",
+      "name": "Eraser",
+      "logo": "https://eraser.heidi.ie/favicon.ico",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "timeout"
+    },
+    {
+      "id": "vmware-workstation",
+      "name": "VMware Workstation",
+      "logo": "https://www.vmware.com/favicon.ico",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "ok": false
+    },
+    {
+      "id": "zonealarm",
+      "name": "ZoneAlarm",
+      "logo": "https://www.zonealarm.com/favicon.ico",
+      "status": 403,
+      "contentType": "text/html",
+      "ok": false
+    },
+    {
+      "id": "google-pinyin",
+      "name": "Google Pinyin",
+      "logo": "https://www.google.com/favicon.ico",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "timeout"
+    },
+    {
+      "id": "spotonthemouse",
+      "name": "SpotOnTheMouse",
+      "logo": "https://www.aurelify.com/favicon.ico",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "timeout"
+    },
+    {
+      "id": "swordsoft-mousetrack",
+      "name": "SwordSoft Mousetrack",
+      "logo": "https://www.swordsoft.idv.tw/favicon.ico",
+      "status": 404,
+      "contentType": "text/html; charset=iso-8859-1",
+      "ok": false
+    },
+    {
+      "id": "pear-rec",
+      "name": "Pear Rec",
+      "logo": "https://github.com/027xiguapi.png",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "timeout"
+    },
+    {
+      "id": "potplayer",
+      "name": "PotPlayer",
+      "logo": "https://potplayer.daum.net/favicon.ico",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "timeout"
+    },
+    {
+      "id": "squoosh",
+      "name": "Squoosh",
+      "logo": "https://squoosh.app/favicon.ico",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "ok": false
+    },
+    {
+      "id": "usbpcap",
+      "name": "USBPcap",
+      "logo": "https://usbpcap.sourceforge.io/favicon.ico",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "timeout"
+    },
+    {
+      "id": "opera-gx",
+      "name": "Opera GX",
+      "logo": "https://www.opera.com/favicon.ico",
+      "status": 403,
+      "contentType": "text/html",
+      "ok": false
+    },
+    {
+      "id": "wechat",
+      "name": "微信",
+      "logo": "https://weixin.qq.com/favicon.ico",
+      "status": 405,
+      "contentType": "",
+      "ok": false
+    },
+    {
+      "id": "rime",
+      "name": "小狼毫输入法",
+      "logo": "https://rime.im/favicon.ico",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "ok": false
+    },
+    {
+      "id": "powertoys",
+      "name": "PowerToys",
+      "logo": "https://github.com/microsoft.png",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "timeout"
+    },
+    {
+      "id": "jq",
+      "name": "jq",
+      "logo": "https://jqlang.github.io/jq/favicon.ico",
+      "status": 0,
+      "contentType": "",
+      "ok": false,
+      "error": "timeout"
+    },
+    {
+      "id": "github-cli",
+      "name": "GitHub CLI",
+      "logo": "https://cli.github.com/favicon.ico",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "ok": false
+    },
+    {
+      "id": "httpie",
+      "name": "HTTPie",
+      "logo": "https://httpie.io/favicon.ico",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "ok": false
+    }
+  ]
+}

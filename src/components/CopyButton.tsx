@@ -24,7 +24,7 @@ export default function CopyButton({ text, title = 'Copy' }: CopyButtonProps) {
   return (
     <button
       onClick={handleCopy}
-      className="p-2 rounded-lg bg-[var(--glass-bg)] border border-[var(--glass-border)] text-ink-muted hover:text-ink hover:bg-[var(--glass-hover-bg)] hover:border-[var(--glass-hover-border)] transition-colors"
+      className="p-2 rounded-lg bg-white border border-gray-200 text-gray-500 hover:text-gray-900 hover:bg-gray-50 hover:border-gray-300 transition-colors"
       title={copied ? 'Copied' : title}
     >
       {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}

@@ -1,10 +1,11 @@
-import Image from 'next/image';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Download, ExternalLink } from 'lucide-react';
 import CopyButton from '@/components/CopyButton';
-import { getToolById, getTools, getLogoPath, getDisplayTags } from '@/lib/tools';
+import Header from '@/components/Header';
+import SafeLogo from '@/components/SafeLogo';
+import { getToolById, getTools, getDisplayTags } from '@/lib/tools';
 import { getStatusStyles, isSafeOfficialUrl, PRICE_LABELS } from '@/lib/download';
 import { PLATFORM_LABELS, ARCH_LABELS } from '@/lib/types';
 
@@ -20,9 +21,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: ToolPageProps): Promise<Metadata> {
   const { id } = await params;
   const tool = await getToolById(id);
-  if (!tool) return { title: 'Not Found - AppGater' };
+  if (!tool) return { title: 'Not Found - Axis' };
   return {
-    title: `${tool.name} — AppGater`,
+    title: `${tool.name} — Axis`,
     description: tool.desc,
   };
 }
@@ -34,32 +35,25 @@ export default async function ToolPage({ params }: ToolPageProps) {
 
   const styles = getStatusStyles(tool.status);
   const isSafe = isSafeOfficialUrl(tool.official);
-  const logo = getLogoPath(tool);
 
   return (
-    <main className="min-h-screen bg-surface">
-      <header className="sticky top-0 z-40 border-b border-[var(--divider)] bg-surface/80 backdrop-blur-xl">
-        <div className="max-w-3xl mx-auto px-4 h-14 flex items-center">
+    <main className="min-h-screen bg-gray-50">
+      <Header sticky />
+
+      <section className="max-w-3xl mx-auto px-4 py-10">
+        <div className="mb-8">
           <Link
-            href="/"
-            className="flex items-center gap-1.5 text-[13px] text-ink-faint hover:text-ink transition-colors"
+            href="/tools"
+            className="inline-flex items-center gap-1.5 text-[13px] text-gray-400 hover:text-gray-900 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             Back
           </Link>
         </div>
-      </header>
 
-      <section className="max-w-3xl mx-auto px-4 py-10">
         {/* Info */}
         <div className="flex items-start gap-4 mb-8">
-          <Image
-            src={logo}
-            alt={tool.name}
-            width={64}
-            height={64}
-            className="tool-logo rounded-xl object-contain shrink-0"
-          />
+          <SafeLogo tool={tool} size={64} className="tool-logo rounded-xl" />
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-1">
               <h1 className="font-display text-2xl font-bold tracking-tight">
@@ -67,15 +61,15 @@ export default async function ToolPage({ params }: ToolPageProps) {
               </h1>
               <span className={`w-1.5 h-1.5 rounded-full ${styles.dot}`} title={styles.text} />
             </div>
-            <p className="text-[13px] text-ink-faint mb-2">{tool.publisher}</p>
+            <p className="text-[13px] text-gray-400 mb-2">{tool.publisher}</p>
             <div className="flex flex-wrap items-center gap-2">
               {tool.platforms.map((p) => (
-                <span key={p} className="text-[11px] px-2 py-0.5 rounded-md bg-[var(--glass-bg)] border border-[var(--glass-border)] text-ink-muted">
+                <span key={p} className="text-[11px] px-2 py-0.5 rounded-md bg-white border border-gray-200 text-gray-500">
                   {PLATFORM_LABELS[p] || p}
                 </span>
               ))}
               {tool.architectures.map((a) => (
-                <span key={a} className="text-[11px] px-2 py-0.5 rounded-md bg-[var(--glass-bg)] border border-[var(--glass-border)] text-ink-muted">
+                <span key={a} className="text-[11px] px-2 py-0.5 rounded-md bg-white border border-gray-200 text-gray-500">
                   {ARCH_LABELS[a] || a}
                 </span>
               ))}
@@ -95,7 +89,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
         </div>
 
         {/* Description */}
-        <p className="text-[15px] text-ink-muted leading-relaxed mb-8 max-w-2xl">
+        <p className="text-[15px] text-gray-500 leading-relaxed mb-8 max-w-2xl">
           {tool.desc}
         </p>
 
@@ -107,9 +101,9 @@ export default async function ToolPage({ params }: ToolPageProps) {
             { label: 'Checked', value: tool.lastChecked ? new Date(tool.lastChecked).toLocaleDateString('en-US') : 'Not checked' },
             { label: 'Verification', value: isSafe ? 'Verified' : 'Unverified' },
           ].map((item) => (
-            <div key={item.label} className="p-3 rounded-lg bg-[var(--glass-bg)] border border-[var(--glass-border)]">
-              <p className="text-[11px] text-ink-faint mb-1">{item.label}</p>
-              <p className="text-[13px] font-medium text-ink">{item.value}</p>
+            <div key={item.label} className="p-3 rounded-lg bg-white border border-gray-200">
+              <p className="text-[11px] text-gray-400 mb-1">{item.label}</p>
+              <p className="text-[13px] font-medium text-gray-900">{item.value}</p>
             </div>
           ))}
         </div>
@@ -119,12 +113,12 @@ export default async function ToolPage({ params }: ToolPageProps) {
           const displayTags = getDisplayTags(tool);
           return displayTags.length > 0 ? (
             <div className="mb-8">
-              <p className="text-[11px] text-ink-faint mb-2">Tags</p>
+              <p className="text-[11px] text-gray-400 mb-2">Tags</p>
               <div className="flex flex-wrap gap-2">
                 {displayTags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-[12px] px-2.5 py-1 rounded-md bg-[var(--glass-bg)] border border-[var(--glass-border)] text-ink-muted"
+                    className="text-[12px] px-2.5 py-1 rounded-md bg-white border border-gray-200 text-gray-500"
                   >
                     {tag}
                   </span>
@@ -140,7 +134,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
             href={`/api/download?id=${tool.id}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-ink text-surface rounded-lg text-[13px] font-medium hover:bg-ink-muted transition-colors"
+            className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-gray-900 text-white rounded-lg text-[13px] font-medium hover:bg-gray-700 transition-colors"
           >
             <Download className="w-4 h-4" />
             Download
@@ -149,7 +143,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
             href={tool.official}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 px-5 py-2.5 bg-[var(--glass-bg)] border border-[var(--glass-border)] rounded-lg text-[13px] text-ink-muted hover:text-ink hover:border-[var(--glass-hover-border)] transition-colors"
+            className="flex items-center justify-center gap-2 px-5 py-2.5 bg-white border border-gray-200 rounded-lg text-[13px] text-gray-500 hover:text-gray-900 hover:border-gray-300 transition-colors"
           >
             <ExternalLink className="w-4 h-4" />
             Homepage
@@ -157,10 +151,10 @@ export default async function ToolPage({ params }: ToolPageProps) {
         </div>
 
         {/* URL */}
-        <div className="rounded-lg bg-[var(--glass-bg)] border border-[var(--glass-border)] p-3">
-          <p className="text-[11px] text-ink-faint mb-1.5">Download URL</p>
+        <div className="rounded-lg bg-white border border-gray-200 p-3">
+          <p className="text-[11px] text-gray-400 mb-1.5">Download URL</p>
           <div className="flex items-center gap-2">
-            <code className="flex-1 bg-[var(--code-bg)] rounded-md px-3 py-2 text-[12px] text-ink-faint font-mono break-all">
+            <code className="flex-1 bg-gray-100 rounded-md px-3 py-2 text-[12px] text-gray-400 font-mono break-all">
               {tool.official}
             </code>
             <CopyButton text={tool.official} title="Copy" />

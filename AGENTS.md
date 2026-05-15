@@ -1,6 +1,6 @@
-# AppGater - AI Agent 项目指南
+# Axis - AI Agent 项目指南
 
-> AppGater 是一个简洁优雅的软件市场 Web 平台，提供官方软件的评分、下载量展示与安全高速的下载代理服务。
+> Axis 是一个简洁优雅的软件市场 Web 平台，提供官方软件的评分、下载量展示与安全高速的下载代理服务。
 > 本项目为中文项目，所有代码注释、界面文案及文档均以中文为主。
 
 ---
@@ -9,7 +9,7 @@
 
 | 项目 | 说明 |
 |------|------|
-| **名称** | AppGater |
+| **名称** | Axis |
 | **版本** | 2.0.0 |
 | **许可证** | MIT |
 | **技术栈** | Next.js 16 + React 19 + TypeScript 5 + Tailwind CSS 3 |
@@ -33,7 +33,7 @@
 ## 项目结构
 
 ```
-AppGater/
+Axis/
 ├── .github/workflows/
 │   └── sync-tools.yml          # GitHub Actions: 每日链接健康检测
 ├── scripts/
@@ -338,3 +338,19 @@ Node.js 脚本，对所有工具的 `official` URL 执行 HTTP `HEAD` 请求：
 | @fortawesome/react-fontawesome | latest | Font Awesome React 绑定 |
 | @fortawesome/free-solid-svg-icons | latest | Font Awesome 实心图标 |
 | @fortawesome/free-regular-svg-icons | latest | Font Awesome 常规图标 |
+
+---
+
+## Agent skills
+
+### Issue tracker
+
+Issues 和 PRD 使用 GitHub Issues 追踪。详见 `docs/agents/issue-tracker.md`。
+
+### Triage labels
+
+使用默认的五个分类标签。详见 `docs/agents/triage-labels.md`。
+
+### Domain docs
+
+单上下文布局（`CONTEXT.md` + `docs/adr/` 在仓库根目录）。详见 `docs/agents/domain.md`。

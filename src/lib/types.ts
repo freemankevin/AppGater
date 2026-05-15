@@ -18,6 +18,9 @@ export interface Tool {
   tags?: string[];
   platforms: string[];
   architectures: string[];
+  downloadUrls?: Record<string, string>;
+  rating?: number;
+  downloadCount?: number;
 }
 
 export type ToolCategory = 'all' | 'dev' | 'office' | 'system' | 'network' | 'media';

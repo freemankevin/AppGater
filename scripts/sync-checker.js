@@ -1,5 +1,5 @@
 /**
- * AppGater 工具链接健康检测脚本
+ * Axis 工具链接健康检测脚本
  * 每日自动检测所有官方链接的可用性
  */
 
@@ -39,7 +39,7 @@ async function checkLink(url, retries = CONFIG.retries) {
       method: 'HEAD',
       timeout: CONFIG.timeout,
       headers: {
-        'User-Agent': 'AppGater-HealthChecker/1.0',
+        'User-Agent': 'Axis-HealthChecker/1.0',
         'Accept': '*/*',
       },
     };
@@ -105,7 +105,7 @@ function determineStatus(checkResult) {
 
 // 主函数
 async function main() {
-  log('🚀 AppGater Health Checker Starting...', 'blue');
+  log('🚀 Axis Health Checker Starting...', 'blue');
   log(`📁 Loading tools from ${CONFIG.toolsFile}`);
 
   // 读取工具数据

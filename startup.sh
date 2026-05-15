@@ -12,7 +12,7 @@ NC='\033[0m'
 clear
 
 echo ""
-echo "  ==== AppGater · 开发服务器 ===="
+echo "  ==== Axis · 开发服务器 ===="
 echo ""
 
 echo -e "${BLUE}▸ 清理缓存...${NC}"
@@ -23,14 +23,33 @@ echo -e "${GREEN}  ✓ 缓存已清理${NC}"
 
 echo -e "${BLUE}▸ 检查端口...${NC}"
 
-PID=$(lsof -ti:$PORT 2>/dev/null)
+cleanup_port() {
+    local port=$1
+    local pids=""
 
-if [ -n "$PID" ]; then
-    echo -e "${YELLOW}  端口 $PORT 已被占用，正在关闭进程...${NC}"
-    kill -9 $PID 2>/dev/null
-    pkill -f "next dev" 2>/dev/null
-    sleep 2
-fi
+    if command -v lsof >/dev/null 2>&1; then
+        pids=$(lsof -ti:$port 2>/dev/null)
+    elif command -v fuser >/dev/null 2>&1; then
+        pids=$(fuser $port/tcp 2>/dev/null | tr -d ' ')
+    elif command -v netstat >/dev/null 2>&1 && command -v taskkill >/dev/null 2>&1; then
+        pids=$(netstat -ano 2>/dev/null | grep ":$port " | grep "LISTENING" | awk '{print $5}' | sort -u)
+    elif command -v netstat >/dev/null 2>&1; then
+        pids=$(netstat -tlnp 2>/dev/null | grep ":$port " | awk '{print $7}' | cut -d'/' -f1 | sort -u)
+    fi
+
+    if [ -n "$pids" ]; then
+        echo -e "${YELLOW}  端口 $port 已被占用，正在关闭进程...${NC}"
+        for pid in $pids; do
+            if [ -n "$pid" ] && [ "$pid" != "-" ]; then
+                kill -9 $pid 2>/dev/null || taskkill //F //PID $pid 2>/dev/null
+            fi
+        done
+        pkill -f "next dev" 2>/dev/null
+        sleep 2
+    fi
+}
+
+cleanup_port $PORT
 
 echo -e "${GREEN}  ✓ 端口 $PORT 可用${NC}"
 

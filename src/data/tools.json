@@ -20,7 +20,7 @@
       "IDE",
       "Microsoft"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+    "logo": "https://code.visualstudio.com/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -29,7 +29,15 @@
     "architectures": [
       "x86",
       "arm64"
-    ]
+    ],
+    "downloadUrls": {
+      "windows-x86": "https://update.code.visualstudio.com/latest/win32-x64-user/stable",
+      "windows-arm64": "https://update.code.visualstudio.com/latest/win32-arm64-user/stable",
+      "mac-x86": "https://update.code.visualstudio.com/latest/darwin/stable",
+      "mac-arm64": "https://update.code.visualstudio.com/latest/darwin-arm64/stable",
+      "linux-x86": "https://update.code.visualstudio.com/latest/linux-x64/stable",
+      "linux-arm64": "https://update.code.visualstudio.com/latest/linux-arm64/stable"
+    }
   },
   {
     "id": "podman",
@@ -61,7 +69,15 @@
     "architectures": [
       "x86",
       "arm64"
-    ]
+    ],
+    "downloadUrls": {
+      "windows-x86": "https://nodejs.org/dist/v22.14.0/node-v22.14.0-x64.msi",
+      "windows-arm64": "https://nodejs.org/dist/v22.14.0/node-v22.14.0-arm64.msi",
+      "mac-x86": "https://nodejs.org/dist/v22.14.0/node-v22.14.0.pkg",
+      "mac-arm64": "https://nodejs.org/dist/v22.14.0/node-v22.14.0.pkg",
+      "linux-x86": "https://nodejs.org/dist/v22.14.0/node-v22.14.0-linux-x64.tar.xz",
+      "linux-arm64": "https://nodejs.org/dist/v22.14.0/node-v22.14.0-linux-arm64.tar.xz"
+    }
   },
   {
     "id": "nodejs",
@@ -84,7 +100,7 @@
       "JavaScript",
       "Backend"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+    "logo": "https://nodejs.org/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -93,7 +109,15 @@
     "architectures": [
       "x86",
       "arm64"
-    ]
+    ],
+    "downloadUrls": {
+      "windows-x86": "https://www.python.org/ftp/python/3.13.2/python-3.13.2-amd64.exe",
+      "windows-arm64": "https://www.python.org/ftp/python/3.13.2/python-3.13.2-arm64.exe",
+      "mac-x86": "https://www.python.org/ftp/python/3.13.2/python-3.13.2-macos11.pkg",
+      "mac-arm64": "https://www.python.org/ftp/python/3.13.2/python-3.13.2-macos11.pkg",
+      "linux-x86": "https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tgz",
+      "linux-arm64": "https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tgz"
+    }
   },
   {
     "id": "python",
@@ -116,7 +140,7 @@
       "Scripting",
       "AI"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    "logo": "https://www.python.org/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -125,7 +149,14 @@
     "architectures": [
       "x86",
       "arm64"
-    ]
+    ],
+    "downloadUrls": {
+      "windows-x86": "https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/Git-2.48.1-64-bit.exe",
+      "mac-x86": "https://sourceforge.net/projects/git-osx-installer/files/git-2.33.0-intel-universal-mavericks.dmg/download",
+      "mac-arm64": "https://sourceforge.net/projects/git-osx-installer/files/git-2.33.0-intel-universal-mavericks.dmg/download",
+      "linux-x86": "https://git-scm.com/download/linux",
+      "linux-arm64": "https://git-scm.com/download/linux"
+    }
   },
   {
     "id": "git",
@@ -148,7 +179,7 @@
       "Command line",
       "Collaboration"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    "logo": "https://git-scm.com/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -157,7 +188,15 @@
     "architectures": [
       "x86",
       "arm64"
-    ]
+    ],
+    "downloadUrls": {
+      "windows-x86": "https://go.dev/dl/go1.24.2.windows-amd64.msi",
+      "windows-arm64": "https://go.dev/dl/go1.24.2.windows-arm64.msi",
+      "mac-x86": "https://go.dev/dl/go1.24.2.darwin-amd64.pkg",
+      "mac-arm64": "https://go.dev/dl/go1.24.2.darwin-arm64.pkg",
+      "linux-x86": "https://go.dev/dl/go1.24.2.linux-amd64.tar.gz",
+      "linux-arm64": "https://go.dev/dl/go1.24.2.linux-arm64.tar.gz"
+    }
   },
   {
     "id": "go",
@@ -180,7 +219,6 @@
       "Backend",
       "Cloud native"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg",
     "platforms": [
       "mac",
       "linux",
@@ -189,7 +227,14 @@
     "architectures": [
       "x86",
       "arm64"
-    ]
+    ],
+    "downloadUrls": {
+      "windows-x86": "https://github.com/containers/podman/releases/download/v5.4.2/podman-5.4.2-setup.exe",
+      "mac-x86": "https://github.com/containers/podman/releases/download/v5.4.2/podman-installer-macos-amd64.pkg",
+      "mac-arm64": "https://github.com/containers/podman/releases/download/v5.4.2/podman-installer-macos-arm64.pkg",
+      "linux-x86": "https://github.com/containers/podman/releases/download/v5.4.2/podman-5.4.2-linux-amd64.tar.gz",
+      "linux-arm64": "https://github.com/containers/podman/releases/download/v5.4.2/podman-5.4.2-linux-arm64.tar.gz"
+    }
   },
   {
     "id": "ruby",
@@ -212,7 +257,7 @@
       "Scripting",
       "Web"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg",
+    "logo": "https://www.ruby-lang.org/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -308,7 +353,7 @@
       "Python",
       "Development tools"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg",
+    "logo": "https://www.jetbrains.com/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -340,7 +385,6 @@
       "Document",
       "Productivity"
     ],
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/5/59/ONLYOFFICE_logo_%28symbol%29.svg",
     "platforms": [
       "mac",
       "linux",
@@ -372,7 +416,6 @@
       "Writing",
       "Editor"
     ],
-    "logo": "https://typora.io/img/icon_256x256.png",
     "platforms": [
       "mac",
       "linux",
@@ -526,7 +569,6 @@
       "Transfer",
       "File manager"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/filezilla/filezilla-original.svg",
     "platforms": [
       "mac",
       "linux",
@@ -590,7 +632,7 @@
       "Network analysis",
       "Security"
     ],
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/d/df/Wireshark_icon.svg",
+    "logo": "https://www.wireshark.org/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -680,7 +722,6 @@
       "Text recognition",
       "Image processing"
     ],
-    "logo": "https://github.com/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -712,7 +753,7 @@
       "Map",
       "Geographic information"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/qgis/qgis-original.svg",
+    "logo": "https://qgis.org/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -744,7 +785,7 @@
       "Live streaming",
       "Video"
     ],
-    "logo": "https://cdn.simpleicons.org/obsstudio/302E31",
+    "logo": "https://obsproject.com/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -753,7 +794,13 @@
     "architectures": [
       "x86",
       "arm64"
-    ]
+    ],
+    "downloadUrls": {
+      "windows-x86": "https://github.com/obsproject/obs-studio/releases/download/31.0.3/OBS-Studio-31.0.3-Windows-Installer.exe",
+      "mac-x86": "https://github.com/obsproject/obs-studio/releases/download/31.0.3/OBS-Studio-31.0.3-macOS-Intel.dmg",
+      "mac-arm64": "https://github.com/obsproject/obs-studio/releases/download/31.0.3/OBS-Studio-31.0.3-macOS-Apple.dmg",
+      "linux-x86": "https://github.com/obsproject/obs-studio/releases/download/31.0.3/obs-studio-31.0.3-linux-x86_64.tar.gz"
+    }
   },
   {
     "id": "video",
@@ -776,7 +823,6 @@
       "Multimedia",
       "Video"
     ],
-    "logo": "https://cdn.simpleicons.org/vlcmediaplayer/FF8800",
     "platforms": [
       "mac",
       "linux",
@@ -785,7 +831,13 @@
     "architectures": [
       "x86",
       "arm64"
-    ]
+    ],
+    "downloadUrls": {
+      "windows-x86": "https://get.videolan.org/vlc/3.0.21/win64/vlc-3.0.21-win64.exe",
+      "mac-x86": "https://get.videolan.org/vlc/3.0.21/macosx/vlc-3.0.21-intel64.dmg",
+      "mac-arm64": "https://get.videolan.org/vlc/3.0.21/macosx/vlc-3.0.21-arm64.dmg",
+      "linux-x86": "https://get.videolan.org/vlc/3.0.21/linux/vlc-3.0.21.tar.xz"
+    }
   },
   {
     "id": "gif",
@@ -928,7 +980,7 @@
       "Generator",
       "Go"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hugo/hugo-original.svg",
+    "logo": "https://gohugo.io/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -960,7 +1012,6 @@
       "Code generation",
       "Design"
     ],
-    "logo": "https://github.com/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -1021,7 +1072,6 @@
       "Testing",
       "Browser"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg",
     "platforms": [
       "mac",
       "linux",
@@ -1085,7 +1135,7 @@
       "Document",
       "Productivity"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg",
+    "logo": "https://www.microsoft.com/favicon.ico",
     "platforms": [
       "mac",
       "windows"
@@ -1116,7 +1166,7 @@
       "Deployment",
       "Command line"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg",
+    "logo": "https://www.microsoft.com/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -1232,7 +1282,6 @@
       "Web",
       "Google"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg",
     "platforms": [
       "mac",
       "linux",
@@ -1264,7 +1313,7 @@
       "Privacy",
       "Open source"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firefox/firefox-original.svg",
+    "logo": "https://www.mozilla.org/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -1385,7 +1434,6 @@
       "Web",
       "Scanner"
     ],
-    "logo": "https://www.zaproxy.org/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -1448,7 +1496,6 @@
       "Manager",
       "Tool"
     ],
-    "logo": "https://www.neatdownloadmanager.com/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -1477,7 +1524,6 @@
       "Download",
       "Open source"
     ],
-    "logo": "https://transmissionbt.com/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -1634,7 +1680,6 @@
       "Diagnostic",
       "Traceroute"
     ],
-    "logo": "https://github.com/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -1663,7 +1708,6 @@
       "Network",
       "Hardware"
     ],
-    "logo": "https://www.intel.com/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -1780,7 +1824,7 @@
       "Display",
       "System"
     ],
-    "logo": "https://github.com/favicon.ico",
+    "logo": "https://github.com/Armin2208.png",
     "platforms": [
       "windows"
     ],
@@ -2048,7 +2092,6 @@
       "Privacy",
       "Disk"
     ],
-    "logo": "https://eraser.heidi.ie/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -2077,7 +2120,6 @@
       "VM",
       "System"
     ],
-    "logo": "https://www.vmware.com/favicon.ico",
     "platforms": [
       "linux",
       "windows"
@@ -2136,7 +2178,7 @@
       "VM",
       "Open source"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/virtualbox/virtualbox-original.svg",
+    "logo": "https://www.virtualbox.org/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -2225,7 +2267,6 @@
       "Security",
       "Antivirus"
     ],
-    "logo": "https://www.zonealarm.com/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -2283,7 +2324,6 @@
       "Chinese",
       "Input"
     ],
-    "logo": "https://www.google.com/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -2372,7 +2412,6 @@
       "Highlight",
       "Presentation"
     ],
-    "logo": "https://www.aurelify.com/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -2401,7 +2440,6 @@
       "Track",
       "Presentation"
     ],
-    "logo": "https://www.swordsoft.idv.tw/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -2459,7 +2497,7 @@
       "Video",
       "Open source"
     ],
-    "logo": "https://github.com/favicon.ico",
+    "logo": "https://github.com/MathewSachin.png",
     "platforms": [
       "windows"
     ],
@@ -2488,7 +2526,6 @@
       "Video",
       "Open source"
     ],
-    "logo": "https://github.com/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -2520,7 +2557,6 @@
       "Video",
       "Multimedia"
     ],
-    "logo": "https://potplayer.daum.net/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -2549,7 +2585,7 @@
       "Text recognition",
       "Chinese"
     ],
-    "logo": "https://github.com/favicon.ico",
+    "logo": "https://github.com/hiroi-sora.png",
     "platforms": [
       "windows"
     ],
@@ -2607,7 +2643,7 @@
       "Drawing",
       "Open source"
     ],
-    "logo": "https://github.com/favicon.ico",
+    "logo": "https://github.com/pubpub-zz.png",
     "platforms": [
       "windows"
     ],
@@ -2726,7 +2762,6 @@
       "Compression",
       "Web"
     ],
-    "logo": "https://squoosh.app/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -2757,7 +2792,6 @@
       "Packet capture",
       "Network"
     ],
-    "logo": "https://usbpcap.sourceforge.io/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -2786,7 +2820,6 @@
       "Gaming",
       "Web"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opera/opera-original.svg",
     "platforms": [
       "mac",
       "linux",
@@ -2850,7 +2883,6 @@
       "Social",
       "Communication"
     ],
-    "logo": "https://weixin.qq.com/favicon.ico",
     "platforms": [
       "mac",
       "windows"
@@ -2881,7 +2913,6 @@
       "Chinese",
       "Input"
     ],
-    "logo": "https://rime.im/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -2943,7 +2974,6 @@
       "Utilities",
       "System"
     ],
-    "logo": "https://github.com/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -3005,7 +3035,6 @@
       "Command line",
       "Parser"
     ],
-    "logo": "https://jqlang.github.io/jq/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -3037,7 +3066,6 @@
       "Command line",
       "Git"
     ],
-    "logo": "https://github.com/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -3069,7 +3097,7 @@
       "Development",
       "Microsoft"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-plain.svg",
+    "logo": "https://visualstudio.microsoft.com/favicon.ico",
     "platforms": [
       "windows"
     ],
@@ -3099,7 +3127,7 @@
       "Database",
       "GUI"
     ],
-    "logo": "https://github.com/favicon.ico",
+    "logo": "https://github.com/qishibo.png",
     "platforms": [
       "mac",
       "linux",
@@ -3131,7 +3159,6 @@
       "API",
       "Command line"
     ],
-    "logo": "https://httpie.io/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -3194,7 +3221,7 @@
       "Chromium",
       "Web"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg",
+    "logo": "https://www.microsoft.com/favicon.ico",
     "platforms": [
       "mac",
       "linux",
@@ -3226,7 +3253,7 @@
       "Systems",
       "Memory safety"
     ],
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg",
+    "logo": "https://www.rust-lang.org/favicon.ico",
     "platforms": [
       "mac",
       "linux",

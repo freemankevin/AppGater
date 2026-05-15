@@ -71,9 +71,9 @@ export function getStatusStyles(status: string) {
       };
     default:
       return {
-        dot: 'bg-ink-faint',
+        dot: 'bg-gray-300',
         text: 'Unknown',
-        border: 'border-ink-faint/30',
+        border: 'border-gray-300/30',
       };
   }
 }

@@ -9,6 +9,8 @@ export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
     const toolId = searchParams.get('id');
+    const platform = searchParams.get('platform');
+    const arch = searchParams.get('arch');
 
     if (!toolId) {
       return NextResponse.json(
@@ -36,11 +38,20 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    return NextResponse.redirect(tool.official, {
+    // Prefer platform/arch specific URL if available
+    let targetUrl = tool.official;
+    if (platform && arch && tool.downloadUrls) {
+      const key = `${platform}-${arch}`;
+      if (tool.downloadUrls[key]) {
+        targetUrl = tool.downloadUrls[key];
+      }
+    }
+
+    return NextResponse.redirect(targetUrl, {
       status: 302,
       headers: {
         'Cache-Control': 'public, max-age=3600',
-        'X-Download-Source': 'AppGater',
+        'X-Download-Source': 'Axis',
         'X-Tool-Id': tool.id,
       },
     });
